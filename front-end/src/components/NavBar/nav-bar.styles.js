@@ -1,10 +1,10 @@
 import styled from "styled-components";
-
+import { innerBackgroundColor, purp } from "../../App.variables";
 export const StyledNavBar = styled.div`
-	background-color: green;
 	bottom: 0;
 	width: 100%;
-	/* bottom: 0; */
+	background-color: ${innerBackgroundColor};
+	box-shadow: 0px 0px 75px inset ${purp};
 	position: fixed;
 
 	.nav-bar-ul {
@@ -20,8 +20,9 @@ export const StyledNavBar = styled.div`
 			flex-direction: column;
 			justify-content: center;
 			text-decoration: none;
+			color: orange;
 			:hover {
-				color: yellow;
+				color: lime;
 				cursor: pointer;
 			}
 		}

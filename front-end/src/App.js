@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Gallery from "./components/Gallery/Gallery";
 import GameManagement from "./components/GameManagement/GameManagement";
 import TrickListGeneration from "./components/TrickListGeneration/TrickListGeneration";
+import Shop from "./components/Shop/Shop";
 
 function App() {
 	return (
@@ -26,6 +27,9 @@ function App() {
 				</Route>
 				<Route path="/trick-list-generation" exact>
 					<TrickListGeneration />
+				</Route>
+				<Route path="/shop" exact>
+					<Shop />
 				</Route>
 			</Switch>
 		</div>

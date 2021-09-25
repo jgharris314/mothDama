@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
 	const navOptions = [
 		"Home",
+		"Shop",
 		"Gallery",
 		"Trick List Generation",
 		"Game Management",
