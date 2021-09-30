@@ -15,12 +15,14 @@ export const StyledNavBar = styled.div`
 		justify-content: space-around;
 
 		&-item {
-			font-size: 18px;
+			font-size: 14px;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			text-decoration: none;
 			color: orange;
+			padding: 0;
+			margin: 1%;
 			:hover {
 				color: lime;
 				cursor: pointer;
