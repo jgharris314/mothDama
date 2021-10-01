@@ -3,13 +3,7 @@ import { StyledNavBar } from "./nav-bar.styles";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
-	const navOptions = [
-		"Home",
-		"Shop",
-		"Gallery",
-		"Trick List Generation",
-		"Game Management",
-	];
+	const navOptions = ["Home", "Shop", "Pretties", "Lines", "Games"];
 
 	return (
 		<StyledNavBar>

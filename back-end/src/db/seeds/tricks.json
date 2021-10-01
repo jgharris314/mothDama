@@ -2,19 +2,19 @@
 	{
 		"trick_name": "big cup",
 		"trick_difficulty": 0,
-		"trick_grip": "both",
+		"trick_grip": "ken",
 		"isEnder": false
 	},
 	{
 		"trick_name": "little cup",
 		"trick_difficulty": 0,
-		"trick_grip": "both",
+		"trick_grip": "ken",
 		"isEnder": false
 	},
 	{
 		"trick_name": "base cup",
 		"trick_difficulty": 0,
-		"trick_grip": "both",
+		"trick_grip": "ken",
 		"isEnder": false
 	},
 	{
@@ -44,7 +44,43 @@
 	{
 		"trick_name": "falling in",
 		"trick_difficulty": 1,
-		"trick_grip": "tama",
+		"trick_grip": "sara",
 		"isEnder": true
+	},
+	{
+		"trick_name": "big cup",
+		"trick_difficulty": 0,
+		"trick_grip": "sara",
+		"isEnder": false
+	},
+	{
+		"trick_name": "little cup",
+		"trick_difficulty": 0,
+		"trick_grip": "sara",
+		"isEnder": false
+	},
+	{
+		"trick_name": "base cup",
+		"trick_difficulty": 0,
+		"trick_grip": "sara",
+		"isEnder": false
+	},
+	{
+		"trick_name": "big cup",
+		"trick_difficulty": 0,
+		"trick_grip": "candle",
+		"isEnder": false
+	},
+	{
+		"trick_name": "little cup",
+		"trick_difficulty": 0,
+		"trick_grip": "candle",
+		"isEnder": false
+	},
+	{
+		"trick_name": "base cup",
+		"trick_difficulty": 0,
+		"trick_grip": "candle",
+		"isEnder": false
 	}
 ]

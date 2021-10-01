@@ -19,13 +19,13 @@ function App() {
 				<Route path="/home" exact>
 					<LandingPage />
 				</Route>
-				<Route path="/gallery" exact>
+				<Route path="/pretties" exact>
 					<Gallery />
 				</Route>
-				<Route path="/game-management" exact>
+				<Route path="/games" exact>
 					<GameManagement />
 				</Route>
-				<Route path="/trick-list-generation" exact>
+				<Route path="/lines" exact>
 					<TrickListGeneration />
 				</Route>
 				<Route path="/shop" exact>
