@@ -42,9 +42,9 @@
 		"isEnder": false
 	},
 	{
-		"trick_name": "falling in",
+		"trick_name": "airplane",
 		"trick_difficulty": 1,
-		"trick_grip": "sara",
+		"trick_grip": "tama",
 		"isEnder": true
 	},
 	{
@@ -82,5 +82,29 @@
 		"trick_difficulty": 0,
 		"trick_grip": "candle",
 		"isEnder": false
+	},
+	{
+		"trick_name": "bird",
+		"trick_difficulty": 1,
+		"trick_grip": "ken",
+		"isEnder": false
+	},
+	{
+		"trick_name": "underbird",
+		"trick_difficulty": 1,
+		"trick_grip": "ken",
+		"isEnder": false
+	},
+	{
+		"trick_name": "nightengale",
+		"trick_difficulty": 1,
+		"trick_grip": "ken",
+		"isEnder": false
+	},
+	{
+		"trick_name": "whirlwind",
+		"trick_difficulty": 1,
+		"trick_grip": "ken",
+		"isEnder": true
 	}
 ]
