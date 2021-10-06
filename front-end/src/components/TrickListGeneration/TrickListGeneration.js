@@ -1,28 +1,34 @@
 import React, { useEffect, useState } from "react";
 import { StyledTrickListGeneration } from "./trick-list-generation.styles";
 import { listAllTricks } from "../../utilities/api";
-
+import { ReactComponent as RightArrow } from "../../svg/right-arrow-svgrepo-com.svg";
 const TrickListGeneration = () => {
+	const defaultObjectState = [
+		{
+			trick_name: "pick",
+			trick_difficulty: 0,
+			trick_grip: "candle",
+			isEnder: false,
+			trick_id: "def",
+		},
+		{
+			trick_name: "trix",
+			trick_difficulty: 0,
+			trick_grip: "candle",
+			isEnder: true,
+			trick_id: "fed",
+		},
+	];
+
 	const [allTricks, setAllTricks] = useState([]);
 	const [trickLine, setTrickLine] = useState("");
 	const [startingGrip, setStartingGrip] = useState("");
 	const [selectedDifficulty, setSelectedDifficulty] = useState(0);
 	const [numberOfTricks, setNumberOfTricks] = useState(1);
 	const [tricksToConsider, setTricksToConsider] = useState(allTricks);
-	const [selectedTrickObjectState, setSelectedTrickObjectState] = useState([
-		{
-			trick_name: "pick",
-			trick_difficulty: 0,
-			trick_grip: "candle",
-			isEnder: false,
-		},
-		{
-			trick_name: "trix",
-			trick_difficulty: 0,
-			trick_grip: "candle",
-			isEnder: false,
-		},
-	]);
+	const [selectedTrickObjectState, setSelectedTrickObjectState] =
+		useState(defaultObjectState);
+
 	function getRandomInt(max) {
 		return Math.floor(Math.random() * max);
 	}
@@ -33,19 +39,32 @@ const TrickListGeneration = () => {
 		let preppedLine = "";
 		let prevId = null;
 		let prevGrip = null;
-		setStartingGrip(selectedTrickObjectState[0].trick_grip);
+		setStartingGrip(
+			selectedTrickObjectState[0].trick_grip[0].toUpperCase() +
+				selectedTrickObjectState[0].trick_grip.slice(1)
+		);
 		for (let i = 0; i < selectedTrickObjectState.length; i++) {
 			if (selectedTrickObjectState[i].trick_grip !== prevGrip && i > 0) {
-				preppedLine += ` trade to ${selectedTrickObjectState[i].trick_grip} grip ${selectedTrickObjectState[i].trick_name}`;
+				preppedLine += `  ➤ ${
+					selectedTrickObjectState[i].trick_grip[0].toUpperCase() +
+					selectedTrickObjectState[i].trick_grip.slice(1)
+				} grip ${
+					selectedTrickObjectState[i].trick_name[0].toUpperCase() +
+					selectedTrickObjectState[i].trick_name.slice(1)
+				}`;
 			} else if (
 				selectedTrickObjectState[i].trick_id === prevId &&
 				selectedTrickObjectState[i].trick_name !== "spike"
 			) {
-				preppedLine += ` ${getRandomInt(2) + 1}x ${
-					selectedTrickObjectState[i].trick_name
+				preppedLine += ` ${getRandomInt(3) + 1}x ${
+					selectedTrickObjectState[i].trick_name[0].toUpperCase() +
+					selectedTrickObjectState[i].trick_name.slice(1)
 				}`;
 			} else {
-				preppedLine += `  ${selectedTrickObjectState[i].trick_name}`;
+				preppedLine += `  ${
+					selectedTrickObjectState[i].trick_name[0].toUpperCase() +
+					selectedTrickObjectState[i].trick_name.slice(1)
+				}`;
 			}
 			prevGrip = selectedTrickObjectState[i].trick_grip;
 			prevId = selectedTrickObjectState[i].trick_id;
@@ -70,7 +89,9 @@ const TrickListGeneration = () => {
 			);
 		}
 
-		setSelectedTrickObjectState(selectedTrickObjects);
+		selectedTrickObjects[0] !== undefined
+			? setSelectedTrickObjectState(selectedTrickObjects)
+			: setSelectedTrickObjectState(defaultObjectState);
 	};
 
 	const handleDifficultyChange = (event) => {
@@ -103,6 +124,7 @@ const TrickListGeneration = () => {
 		<StyledTrickListGeneration>
 			<div className="line-header">
 				<h1>mothDama</h1>
+				<p className="line-header-p">There is no easy</p>
 			</div>
 			<div className="line-display">
 				<p>Starting Grip: {startingGrip}</p>

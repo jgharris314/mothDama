@@ -1,10 +1,8 @@
 import styled from "styled-components";
-
+import { innerBackgroundColor, purp } from "../../App.variables";
 export const StyledTrickListGeneration = styled.div`
-	background-color: orange;
+	background-color: black;
 	margin: 0;
-	/* z-index: 99; */
-	/* overflow: scroll; */
 	min-height: 100vh;
 	overflow: hidden;
 
@@ -14,8 +12,10 @@ export const StyledTrickListGeneration = styled.div`
 		margin: 1% auto;
 		font-size: 16px;
 		color: lime;
-		background-color: purple;
+		background-color: ${innerBackgroundColor};
 		border: none;
+		border-radius: 5px;
+		box-shadow: 0px 0px 70px ${purp} inset;
 	}
 	.options {
 		display: flex;
@@ -27,7 +27,7 @@ export const StyledTrickListGeneration = styled.div`
 			flex-direction: column;
 			width: 85%;
 			border-radius: 20px;
-			border: 5px solid black;
+			border: 5px solid ${purp};
 			margin: 0 auto;
 			padding-bottom: 2%;
 
@@ -43,10 +43,15 @@ export const StyledTrickListGeneration = styled.div`
 	}
 
 	.line-display {
-		background-color: white;
+		background-color: darkgray;
 		min-height: 400px;
 		max-height: 400px;
 		overflow-y: scroll;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+		::-webkit-scrollbar {
+			display: none;
+		}
 
 		p {
 			font-size: 26px;
@@ -55,17 +60,22 @@ export const StyledTrickListGeneration = styled.div`
 		width: 85%;
 		margin: 1% auto;
 		border-radius: 20px;
-		border: 5px solid black;
+		border: 5px solid green;
 	}
 
 	.line-header {
 		width: 100%;
-		background-color: gray;
+		background-color: peachpuff;
 		margin: 0 auto 20px auto;
 		font-size: 24px;
 
 		h1 {
 			margin: 0 auto;
+		}
+
+		&-p {
+			padding-top: 0;
+			margin-top: 0;
 		}
 	}
 `;
