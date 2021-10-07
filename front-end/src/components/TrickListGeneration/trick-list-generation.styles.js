@@ -9,7 +9,7 @@ export const StyledTrickListGeneration = styled.div`
 	button {
 		width: 50%;
 		height: 70px;
-		margin: 1% auto;
+		margin: 1% auto 100px auto;
 		font-size: 16px;
 		color: lime;
 		background-color: ${innerBackgroundColor};
