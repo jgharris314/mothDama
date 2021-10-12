@@ -27,7 +27,7 @@ export const StyledLandingPage = styled.div`
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 
-			margin-top: 10px;
+			margin-top: 0px;
 			/* background: ; */
 		}
 

@@ -4,22 +4,21 @@ import OpenGame from "./components/OpenGame/OpenGame.js";
 import KenGame from "./components/KenGame/KenGame.js";
 
 const GameManagement = () => {
+	const gameModes = ["Open", "KEN", "Freestyle"];
 	const [gameState, setGameState] = useState("none");
-
-	const handleGameChange = (event) => {
-		const value = event.target.value;
-		setGameState(value);
-	};
 
 	return (
 		<StyledGameManagement>
-			Game Management
-			<div>
-				<select onChange={(event) => handleGameChange(event)}>
-					<option value={"none"}>None</option>
-					<option value={"open"}>Open</option>
-					<option value={"ken"}>K.E.N</option>
-				</select>
+			<div className="game-header">
+				<h1>mothDama</h1>
+				<h2>Dare to Believe</h2>
+			</div>
+			<div className="game-modes">
+				{gameModes.map((mode) => (
+					<button onClick={() => setGameState(mode.toLowerCase())}>
+						{mode}
+					</button>
+				))}
 			</div>
 			{gameState === "open" && <OpenGame />}
 			{gameState === "ken" && <KenGame />}

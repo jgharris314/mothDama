@@ -1,9 +1,8 @@
 import styled from "styled-components";
 import { purp, outerBackgroundColor } from "../../App.variables";
 export const StyledTrickListGeneration = styled.div`
-	background-color: black;
 	margin: 0;
-	height: 95vh;
+	max-height: 95vh;
 	overflow: hidden;
 
 	button {
@@ -12,7 +11,7 @@ export const StyledTrickListGeneration = styled.div`
 		margin: 1% auto 100px auto;
 		font-size: 16px;
 		color: lime;
-
+		font-weight: bold;
 		border: none;
 		border-radius: 5px;
 		background-color: ${purp};
@@ -22,6 +21,7 @@ export const StyledTrickListGeneration = styled.div`
 		display: flex;
 		flex-direction: row;
 		margin-bottom: 5px;
+		font-weight: bold;
 		&-settings {
 			background-color: ${purp};
 			box-shadow: 0px 0px 100px inset ${outerBackgroundColor};

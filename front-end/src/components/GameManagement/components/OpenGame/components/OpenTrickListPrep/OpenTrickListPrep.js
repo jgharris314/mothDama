@@ -39,62 +39,68 @@ const TrickListPrep = ({
 
 	return (
 		<StyledOpenTrickListPrep>
-			<div>
-				Presets
-				{trickList.name.length ? (
-					<div>
-						<h6>{trickList.name}</h6>
+			{trickList.name.length ? (
+				<div>
+					<div className="chosen-tricklist">
+						<div className="chosen-tricklist-header">
+							{trickList.name}
+						</div>
 						{trickList.tricks.map((t) => (
-							<li>{t}</li>
+							<div>{t}</div>
 						))}
-						<button onClick={() => setStartGame(true)}>
-							Start
-						</button>
+					</div>
+					<div className="chosen-tricklist-buttons">
 						<button onClick={() => setTrickList(defaultTrickList)}>
 							Wait! I don't like this list
 						</button>
+						<button onClick={() => setStartGame(true)}>
+							Start
+						</button>
 					</div>
-				) : (
-					<div>
-						<div>
-							{presetList.map((trickList) => (
-								<div>
-									<li
-										key={trickList.id}
-										onClick={() =>
-											loadTrickList(trickList.id)
-										}
-										data-tip
-										data-for={`${trickList.id}Tip`}
-									>
-										{trickList.name}
-									</li>
-
-									<ReactToolTip
-										key={`${trickList.id}Tip`}
-										id={`${trickList.id}Tip`}
-										place="top"
-									>
-										{trickList.tricks.map((trick) => (
-											<li key={`${trickList.trick}key`}>
-												{trick}
-											</li>
-										))}
-									</ReactToolTip>
+				</div>
+			) : (
+				<div>
+					<div className="presets">
+						<div className="presets-header">Presets</div>
+						{presetList.map((trickList) => (
+							<div>
+								<div
+									className="presets-item"
+									key={trickList.id}
+									onClick={() => loadTrickList(trickList.id)}
+									data-tip
+									data-for={`${trickList.id}Tip`}
+								>
+									{trickList.name}
 								</div>
-							))}
+
+								<ReactToolTip
+									key={`${trickList.id}Tip`}
+									id={`${trickList.id}Tip`}
+									place="top"
+								>
+									{trickList.tricks.map((trick) => (
+										<li key={`${trick}key`}>{trick}</li>
+									))}
+								</ReactToolTip>
+							</div>
+						))}
+					</div>
+					<div className="creation-form">
+						<div className="creation-form-header">
+							Don't like the presets? Create your own!
 						</div>
-						Trick List Creation Form
 						<form onSubmit={submitHandler}>
 							<textarea
+								className="creation-form-textarea"
 								onChange={handleChange}
-								defaultValue="enter,tricks,separated,by,a,comma"
+								placeholder="enter,tricks,separated,by,a,comma"
 							></textarea>
-							<button type="submit">GoGoGo</button>
+							<button type="submit">Play Custom</button>
 						</form>
 					</div>
-				)}
-			</div>
+				</div>
+			)}
 		</StyledOpenTrickListPrep>
 	);
 };

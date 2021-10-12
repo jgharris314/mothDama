@@ -4,21 +4,21 @@ export const StyledPlayOpenGame = styled.div`
 	background-color: yellowgreen;
 	display: flex;
 	flex-direction: column;
-	height: 90vh;
-	/* justify-content: center; */
+	max-height: 70vh;
+	width: 85%;
+	margin: 0 auto;
+	border-radius: 5px;
 
 	.open-game {
 		&-scores {
 			display: flex;
 			flex-direction: row;
-			/* width: 100%; */
 			justify-content: center;
 
 			&-player {
 				display: flex;
 				flex-direction: column;
 				margin: 0 auto;
-				/* justify-content: space-around; */
 				text-align: left;
 			}
 		}
