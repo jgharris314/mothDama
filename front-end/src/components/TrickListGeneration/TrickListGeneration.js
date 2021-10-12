@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { StyledTrickListGeneration } from "./trick-list-generation.styles";
 import { listAllTricks } from "../../utilities/api";
-import { ReactComponent as RightArrow } from "../../svg/right-arrow-svgrepo-com.svg";
 const TrickListGeneration = () => {
 	const defaultObjectState = [
 		{
@@ -124,7 +123,7 @@ const TrickListGeneration = () => {
 		<StyledTrickListGeneration>
 			<div className="line-header">
 				<h1>mothDama</h1>
-				<p className="line-header-p">There is no easy</p>
+				<h2 className="line-header-p">There is no easy</h2>
 			</div>
 			<div className="line-display">
 				<p>Starting Grip: {startingGrip}</p>

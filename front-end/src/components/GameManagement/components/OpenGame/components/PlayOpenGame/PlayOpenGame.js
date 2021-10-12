@@ -49,23 +49,37 @@ const PlayOpenGame = ({ trickList }) => {
 	};
 	return (
 		<StyledPlayOpenGame>
-			<div>
-				<div>
-					<h4>Tricks Remaining</h4>
-					{
-						<ul>
-							{" "}
-							{gameTrickList.map((t) => (
-								<li>{t}</li>
-							))}
-						</ul>
-					}
+			<h3>{trickList.name}</h3>
+			<div className="open-game-scores">
+				<div className="open-game-scores-player">
+					Player One: {playerOneScore}
 				</div>
-				<div>
-					<h4>Lace it!</h4>
-					{<h5>{currentTrick}</h5>}
+				<div className="open-game-scores-player">
+					Player Two: {playerTwoScore}
 				</div>
-				<div>
+			</div>
+			<div className="open-game-remaining">
+				<div className="open-game-remaining-col">
+					Tricks until Reshuffle
+				</div>
+
+				<div className="open-game-remaining-col">
+					{gameTrickList.length}
+				</div>
+			</div>
+			<div className="open-game-current">
+				<div className="open-game-current-col">Lace it!</div>
+				<div className="open-game-current-col">{currentTrick}</div>
+			</div>
+
+			<div className="open-game-controls">
+				<button onClick={nextTrick}>
+					{gameTrickList.length ? "Go" : "Re-shuffle"}
+				</button>
+				<button onClick={increasePlayerOneScore}>P1</button>
+				<button onClick={increasePlayerTwoScore}>P2</button>
+			</div>
+			{/* <div>
 					<h4>Been there done that!</h4>
 					{
 						<ul>
@@ -75,15 +89,7 @@ const PlayOpenGame = ({ trickList }) => {
 							))}
 						</ul>
 					}
-				</div>
-				<div>
-					<h6>Player One: {playerOneScore}</h6>
-					<h6>Player Two: {playerTwoScore}</h6>
-					<button onClick={nextTrick}>Go!</button>
-					<button onClick={increasePlayerOneScore}>P1</button>
-					<button onClick={increasePlayerTwoScore}>P2</button>
-				</div>
-			</div>
+				</div> */}
 		</StyledPlayOpenGame>
 	);
 };

@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { innerBackgroundColor, purp } from "../../App.variables";
+import { outerBackgroundColor, purp } from "../../App.variables";
 export const StyledNavBar = styled.div`
 	bottom: 0;
 	width: 100%;
-	background-color: ${innerBackgroundColor};
-	box-shadow: 0px 0px 75px inset ${purp};
+	background-color: ${purp};
+	box-shadow: 0px 0px 200px inset ${outerBackgroundColor};
 	position: fixed;
 
 	.nav-bar-ul {
@@ -13,6 +13,7 @@ export const StyledNavBar = styled.div`
 		flex-direction: row;
 		min-height: 30px;
 		justify-content: space-around;
+		padding-left: 0px;
 
 		&-item {
 			font-size: 14px;
