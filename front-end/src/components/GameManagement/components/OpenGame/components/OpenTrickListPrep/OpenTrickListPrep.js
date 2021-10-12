@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { StyledOpenTrickListPrep } from "./open-trick-list-prep.styles";
 import { presetList } from "../../../../../../data/presetTricks";
+import ReactToolTip from "react-tooltip";
 const TrickListPrep = ({
 	trickList,
 	setTrickList,
@@ -35,10 +36,11 @@ const TrickListPrep = ({
 			setTrickList(presetList.find((t) => t.id === id));
 		}
 	};
+
 	return (
 		<StyledOpenTrickListPrep>
 			<div>
-				Display Trick List
+				Presets
 				{trickList.name.length ? (
 					<div>
 						<h6>{trickList.name}</h6>
@@ -56,12 +58,30 @@ const TrickListPrep = ({
 					<div>
 						<div>
 							{presetList.map((trickList) => (
-								<li
-									key={trickList.id}
-									onClick={() => loadTrickList(trickList.id)}
-								>
-									{trickList.name}
-								</li>
+								<div>
+									<li
+										key={trickList.id}
+										onClick={() =>
+											loadTrickList(trickList.id)
+										}
+										data-tip
+										data-for={`${trickList.id}Tip`}
+									>
+										{trickList.name}
+									</li>
+
+									<ReactToolTip
+										key={`${trickList.id}Tip`}
+										id={`${trickList.id}Tip`}
+										place="top"
+									>
+										{trickList.tricks.map((trick) => (
+											<li key={`${trickList.trick}key`}>
+												{trick}
+											</li>
+										))}
+									</ReactToolTip>
+								</div>
 							))}
 						</div>
 						Trick List Creation Form

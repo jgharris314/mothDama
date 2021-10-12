@@ -1,9 +1,5 @@
 import styled from "styled-components";
-import {
-	innerBackgroundColor,
-	purp,
-	outerBackgroundColor,
-} from "../../App.variables";
+import { purp, outerBackgroundColor } from "../../App.variables";
 export const StyledTrickListGeneration = styled.div`
 	background-color: black;
 	margin: 0;
@@ -33,7 +29,6 @@ export const StyledTrickListGeneration = styled.div`
 			flex-direction: column;
 			width: 85%;
 			border-radius: 20px;
-			/* border: 5px solid ${purp}; */
 			color: lime;
 			margin: 0 auto;
 			padding-bottom: 2%;
@@ -72,7 +67,6 @@ export const StyledTrickListGeneration = styled.div`
 		width: 85%;
 		margin: 0 auto 5px auto;
 		border-radius: 20px;
-		/* border: 5px solid green; */
 		margin-top: 0px;
 	}
 
@@ -91,8 +85,6 @@ export const StyledTrickListGeneration = styled.div`
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			padding-bottom: 0;
-			/* margin-top: 10px; */
-			/* background: ; */
 			margin-top: 0px;
 		}
 
