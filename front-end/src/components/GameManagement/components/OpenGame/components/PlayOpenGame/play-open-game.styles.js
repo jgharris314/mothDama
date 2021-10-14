@@ -11,7 +11,11 @@ export const StyledPlayOpenGame = styled.div`
 	border-radius: 5px;
 	color: white;
 	font-weight: bold;
+	font-size: 26px;
 
+	h3 {
+		font-size: 32px;
+	}
 	.open-game {
 		&-container {
 			display: flex;
@@ -21,7 +25,7 @@ export const StyledPlayOpenGame = styled.div`
 		&-scores {
 			display: flex;
 			flex-direction: column;
-
+			margin-bottom: 5px;
 			align-items: center;
 			width: 100%;
 
@@ -52,27 +56,28 @@ export const StyledPlayOpenGame = styled.div`
 		&-current {
 			display: flex;
 			flex-direction: column;
-			margin-top: 20px;
+			margin-top: 5px;
 			&-row {
 				display: flex;
 				flex-direction: row;
 				margin: 0 auto;
 				text-align: left;
 				max-width: 85%;
-				/* height: 60px; */
+				font-size: 36px;
 			}
 		}
 
 		&-controls {
 			display: flex;
 			flex-direction: row;
-			margin: 200px auto 20px auto;
-			width: 100%;
+			width: 85%;
 			justify-content: center;
+			position: absolute;
+			bottom: 10%;
 
 			button {
-				width: 100px;
-				height: 75px;
+				width: 75px;
+				height: 50px;
 				margin: 1px;
 				background-color: lime;
 				border: none;
@@ -94,13 +99,18 @@ export const StyledPlayOpenGame = styled.div`
 
 	#next-button {
 		width: 100%;
-		height: 150px;
+		height: 100px;
 	}
 
 	#current-trick {
-		font-size: 32px;
-		/* max-height: 40px; */
+		font-size: 28px;
+		width: 85%;
+		height: 150px;
+		justify-content: center;
 		/* margin-bottom: 20%; */
+		border-radius: 5px;
 		background-color: rgba(255, 255, 255, 0.18);
+		padding: 2%;
+		overflow: scroll;
 	}
 `;

@@ -26,6 +26,7 @@ export const StyledGameManagement = styled.div`
 			background: -webkit-linear-gradient(#e5a506, orange);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
+			margin-bottom: 5px;
 		}
 	}
 

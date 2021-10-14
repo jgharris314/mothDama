@@ -7,8 +7,9 @@ export const StyledOpenTrickListPrep = styled.div`
 	width: 85%;
 	margin: 0 auto;
 	border-radius: 5px;
-	height: 505px;
+	height: 650px;
 	padding-top: 10px;
+	overflow: scroll;
 	.hover-tricks {
 		height: 40px;
 	}
@@ -80,7 +81,7 @@ export const StyledOpenTrickListPrep = styled.div`
 		}
 
 		&-buttons {
-			margin-top: 7px;
+			margin-bottom: 10px;
 			display: flex;
 			justify-content: space-evenly;
 

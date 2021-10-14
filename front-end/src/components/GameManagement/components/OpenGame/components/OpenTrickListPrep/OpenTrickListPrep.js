@@ -41,14 +41,6 @@ const TrickListPrep = ({
 		<StyledOpenTrickListPrep>
 			{trickList.name.length ? (
 				<div>
-					<div className="chosen-tricklist">
-						<div className="chosen-tricklist-header">
-							{trickList.name}
-						</div>
-						{trickList.tricks.map((t) => (
-							<div>{t}</div>
-						))}
-					</div>
 					<div className="chosen-tricklist-buttons">
 						<button onClick={() => setTrickList(defaultTrickList)}>
 							Wait! I don't like this list
@@ -56,6 +48,14 @@ const TrickListPrep = ({
 						<button onClick={() => setStartGame(true)}>
 							Start
 						</button>
+					</div>
+					<div className="chosen-tricklist">
+						<div className="chosen-tricklist-header">
+							{trickList.name}
+						</div>
+						{trickList.tricks.map((t) => (
+							<div>{t}</div>
+						))}
 					</div>
 				</div>
 			) : (

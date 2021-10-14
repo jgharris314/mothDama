@@ -3,7 +3,7 @@ import { purp, outerBackgroundColor } from "../../App.variables";
 export const StyledTrickListGeneration = styled.div`
 	margin: 0;
 	max-height: 95vh;
-	overflow: hidden;
+	overflow: scroll;
 
 	button {
 		width: 50%;
@@ -47,8 +47,9 @@ export const StyledTrickListGeneration = styled.div`
 	.line-display {
 		background-color: ${purp};
 		box-shadow: 0px 0px 200px inset ${outerBackgroundColor};
-		min-height: 400px;
-		max-height: 400px;
+		min-height: 300px;
+		/* max-height: 250px; */
+
 		overflow-y: scroll;
 		-ms-overflow-style: none;
 		scrollbar-width: none;
@@ -61,7 +62,10 @@ export const StyledTrickListGeneration = styled.div`
 			font-weight: bold;
 			color: white;
 			background-color: rgba(255, 255, 255, 0.18);
-			border-radius: 25px;
+			border-radius: 5px;
+			width: 85%;
+			margin: 20px auto;
+			padding: 2%;
 		}
 
 		width: 85%;

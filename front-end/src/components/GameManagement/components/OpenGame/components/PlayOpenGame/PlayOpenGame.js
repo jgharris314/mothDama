@@ -69,7 +69,7 @@ const PlayOpenGame = ({ trickList }) => {
 	};
 	return (
 		<StyledPlayOpenGame>
-			<h3>{trickList.name}</h3>
+			{/* <h3>{trickList.name}</h3> */}
 			<div className="open-game-container">
 				<div className="open-game-scores">
 					<div className="open-game-scores-row">Player One</div>
@@ -82,11 +82,7 @@ const PlayOpenGame = ({ trickList }) => {
 			</div>
 			<div className="open-game-remaining">
 				<div className="open-game-remaining-row">
-					Tricks until Reshuffle
-				</div>
-
-				<div className="open-game-remaining-row">
-					{gameTrickList.length}
+					Tricks remaining: {gameTrickList.length}
 				</div>
 			</div>
 			<div className="open-game-current">
@@ -98,8 +94,8 @@ const PlayOpenGame = ({ trickList }) => {
 
 			<div className="open-game-controls">
 				<div className="open-game-controls-col">
-					<button onClick={reducePlayerOneScore}>P1 -</button>
 					<button onClick={increasePlayerOneScore}>P1 +</button>
+					<button onClick={reducePlayerOneScore}>P1 -</button>
 				</div>
 				<div className="open-game-controls-col">
 					<button onClick={nextTrick} id="next-button">
@@ -107,8 +103,8 @@ const PlayOpenGame = ({ trickList }) => {
 					</button>
 				</div>
 				<div className="open-game-controls-col">
-					<button onClick={reducePlayerTwoScore}>P2 -</button>
 					<button onClick={increasePlayerTwoScore}>P2 +</button>
+					<button onClick={reducePlayerTwoScore}>P2 -</button>
 				</div>
 			</div>
 		</StyledPlayOpenGame>
