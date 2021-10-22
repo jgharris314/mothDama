@@ -1,7 +1,12 @@
 import React from "react";
 import { StyledGallery } from "./gallery.styles";
+import Header from "../Header/Header";
 const Gallery = () => {
-	return <StyledGallery>Gallery</StyledGallery>;
+	return (
+		<StyledGallery>
+			<Header headerMemo={"Words"} />
+		</StyledGallery>
+	);
 };
 
 export default Gallery;

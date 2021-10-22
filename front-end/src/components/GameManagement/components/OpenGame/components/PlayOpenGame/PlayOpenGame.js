@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { StyledPlayOpenGame } from "./play-open-game.styles";
 
-const PlayOpenGame = ({ trickList }) => {
+const PlayOpenGame = ({ trickList, setStartGame }) => {
 	const [gameTrickList, setGameTrickList] = useState(trickList.tricks);
 	const [usedTrickList, setUsedTrickList] = useState([]);
 	const [playerOneScore, setPlayerOneScore] = useState(0);
@@ -106,6 +106,9 @@ const PlayOpenGame = ({ trickList }) => {
 					<button onClick={increasePlayerTwoScore}>P2 +</button>
 					<button onClick={reducePlayerTwoScore}>P2 -</button>
 				</div>
+				<button onClick={() => setStartGame(false)}>
+					Jack! Go back!
+				</button>
 			</div>
 		</StyledPlayOpenGame>
 	);

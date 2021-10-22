@@ -73,32 +73,4 @@ export const StyledTrickListGeneration = styled.div`
 		border-radius: 20px;
 		margin-top: 0px;
 	}
-
-	.line-header {
-		width: 100%;
-		justify-content: center;
-		color: white;
-		top: 0;
-		background-color: ${purp};
-		box-shadow: 0px 0px 300px inset ${outerBackgroundColor};
-		margin-bottom: 10px;
-		h1 {
-			margin-bottom: 0px;
-			font-size: 72px;
-			background: -webkit-linear-gradient(#93e506, lime);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			padding-bottom: 0;
-			margin-top: 0px;
-		}
-
-		h2 {
-			font-size: 32px;
-			margin: 0px;
-			padding-top: 0;
-			background: -webkit-linear-gradient(#e5a506, orange);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-		}
-	}
 `;

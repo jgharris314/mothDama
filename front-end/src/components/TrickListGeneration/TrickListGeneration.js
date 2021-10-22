@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { StyledTrickListGeneration } from "./trick-list-generation.styles";
 import { listAllTricks } from "../../utilities/api";
+import Header from "../Header/Header";
 const TrickListGeneration = () => {
 	const defaultObjectState = [
 		{
@@ -121,10 +122,7 @@ const TrickListGeneration = () => {
 
 	return (
 		<StyledTrickListGeneration>
-			<div className="line-header">
-				<h1>mothDama</h1>
-				<h2 className="line-header-p">There is no easy</h2>
-			</div>
+			<Header headerMemo={"There is no easy"} />
 			<div className="line-display">
 				<p>Starting Grip: {startingGrip}</p>
 				<p>{trickLine}</p>

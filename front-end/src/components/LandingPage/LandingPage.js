@@ -1,5 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
+import Header from "../Header/Header";
 import { useMediaQuery } from "react-responsive";
 
 import { StyledLandingPage } from "./landing-pages.styles";
@@ -11,10 +12,7 @@ const LandingPage = () => {
 	return (
 		<StyledLandingPage>
 			{(isBigScreen || isPortrait) && (
-				<div className="landing-page-header">
-					<h1>mothDama</h1>
-					<h2>Step in to the light</h2>
-				</div>
+				<Header headerMemo={"Step in to the light"} />
 			)}
 			<div className="video-player">
 				<div className="video-player-col">

@@ -11,7 +11,10 @@ const OpenGame = () => {
 	return (
 		<StyledOpenGame>
 			{startGame ? (
-				<PlayOpenGame trickList={trickList} />
+				<PlayOpenGame
+					trickList={trickList}
+					setStartGame={setStartGame}
+				/>
 			) : (
 				<OpenTrickListPrep
 					trickList={trickList}
