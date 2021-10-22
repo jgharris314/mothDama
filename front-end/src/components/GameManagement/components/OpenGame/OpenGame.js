@@ -14,6 +14,8 @@ const OpenGame = () => {
 				<PlayOpenGame
 					trickList={trickList}
 					setStartGame={setStartGame}
+					setTrickList={setTrickList}
+					defaultTricklist={defaultTrickList}
 				/>
 			) : (
 				<OpenTrickListPrep

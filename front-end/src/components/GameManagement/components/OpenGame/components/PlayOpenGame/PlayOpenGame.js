@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import { StyledPlayOpenGame } from "./play-open-game.styles";
 
-const PlayOpenGame = ({ trickList, setStartGame }) => {
+const PlayOpenGame = ({
+	trickList,
+	setTrickList,
+	setStartGame,
+	defaultTricklist,
+}) => {
 	const [gameTrickList, setGameTrickList] = useState(trickList.tricks);
 	const [usedTrickList, setUsedTrickList] = useState([]);
 	const [playerOneScore, setPlayerOneScore] = useState(0);
@@ -16,6 +21,10 @@ const PlayOpenGame = ({ trickList, setStartGame }) => {
 		setCurrentTrick("");
 	};
 
+	const returnToPresets = () => {
+		setTrickList(defaultTricklist);
+		setStartGame(false);
+	};
 	const increasePlayerOneScore = () => {
 		if (playerOneScore < 2) {
 			setPlayerOneScore(playerOneScore + 1);
@@ -106,9 +115,26 @@ const PlayOpenGame = ({ trickList, setStartGame }) => {
 					<button onClick={increasePlayerTwoScore}>P2 +</button>
 					<button onClick={reducePlayerTwoScore}>P2 -</button>
 				</div>
-				<button onClick={() => setStartGame(false)}>
-					Jack! Go back!
-				</button>
+				<div className="open-game-controls-col">
+					<button
+						onClick={() =>
+							window.confirm("End game?")
+								? setStartGame(false)
+								: null
+						}
+					>
+						Return to trick list
+					</button>
+					<button
+						onClick={() =>
+							window.confirm("End game?")
+								? returnToPresets()
+								: null
+						}
+					>
+						Return to preset list
+					</button>
+				</div>
 			</div>
 		</StyledPlayOpenGame>
 	);
