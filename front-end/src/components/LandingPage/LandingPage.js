@@ -7,7 +7,7 @@ import { StyledLandingPage } from "./landing-pages.styles";
 
 const LandingPage = () => {
 	const isBigScreen = useMediaQuery({ query: "(min-width: 1280px)" });
-	const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+	// const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 	const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
 	return (
 		<StyledLandingPage>

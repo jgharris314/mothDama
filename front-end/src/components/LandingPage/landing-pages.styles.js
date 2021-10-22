@@ -1,10 +1,6 @@
 import styled from "styled-components";
-import headerBackground from "../../images/greenpurpTriangles.jpg";
-import {
-	outerBackgroundColor,
-	innerBackgroundColor,
-	purp,
-} from "../../App.variables";
+
+import { outerBackgroundColor } from "../../App.variables";
 
 export const StyledLandingPage = styled.div`
 	display: flex;

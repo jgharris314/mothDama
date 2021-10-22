@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { purp, outerBackgroundColor } from "../../App.variables";
+import { purp } from "../../App.variables";
 
 export const StyledGameManagement = styled.div`
 	.game-modes {
