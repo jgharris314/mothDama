@@ -7,8 +7,11 @@ import Gallery from "./components/Gallery/Gallery";
 import GameManagement from "./components/GameManagement/GameManagement";
 import TrickListGeneration from "./components/TrickListGeneration/TrickListGeneration";
 import Shop from "./components/Shop/Shop";
-
+import ReactGA from "react-ga";
+import RouteChangeTracker from "./RouteChangeTracker";
 function App() {
+	const TRACKING_ID = "G-KFRY691PSC"; // YOUR_OWN_TRACKING_ID
+	ReactGA.initialize(TRACKING_ID);
 	return (
 		<div className="App">
 			<NavBar />
@@ -32,6 +35,7 @@ function App() {
 					<Shop />
 				</Route>
 			</Switch>
+			<RouteChangeTracker />
 		</div>
 	);
 }
