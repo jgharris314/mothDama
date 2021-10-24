@@ -6,7 +6,7 @@ export const StyledLandingPage = styled.div`
 	display: flex;
 	flex-direction: column;
 	background-color: ${outerBackgroundColor};
-	box-shadow: 0px 0px 200px inset #887777;
+	/* box-shadow: 0px 0px 200px inset #887777; */
 	height: 100vh;
 
 	.video-player {

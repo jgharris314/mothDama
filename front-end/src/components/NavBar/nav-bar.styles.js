@@ -21,9 +21,13 @@ export const StyledNavBar = styled.div`
 			flex-direction: column;
 			justify-content: center;
 			text-decoration: none;
-			color: orange;
-			padding: 0;
-			margin: 1%;
+			color: lime;
+			font-weight: bold;
+			padding: 8px;
+			/* margin: 1%; */
+			box-shadow: 0px 0px 3px orange;
+			border-radius: 5px;
+
 			:hover {
 				color: lime;
 				cursor: pointer;
