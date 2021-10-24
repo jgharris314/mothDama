@@ -35,7 +35,7 @@ const TrickListGeneration = () => {
 
 	const generateLine = () => {
 		prepTricks();
-		console.log(allTricks);
+
 		let preppedLine = "";
 		let prevId = null;
 		let prevGrip = null;

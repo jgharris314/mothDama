@@ -8,7 +8,7 @@ export const StyledTrickListGeneration = styled.div`
 	button {
 		width: 50%;
 		height: 70px;
-		margin: 1% auto 100px auto;
+		margin: 5px auto 100px auto;
 		font-size: 16px;
 		color: lime;
 		font-weight: bold;
@@ -23,8 +23,8 @@ export const StyledTrickListGeneration = styled.div`
 		margin-bottom: 5px;
 		font-weight: bold;
 		&-settings {
-			background-color: ${purp};
-			box-shadow: 0px 0px 100px inset ${outerBackgroundColor};
+			background-color: rgba(119, 0, 166, 0.7);
+			/* box-shadow: 0px 0px 100px inset ${outerBackgroundColor}; */
 			display: flex;
 			flex-direction: column;
 			width: 90%;
@@ -45,8 +45,8 @@ export const StyledTrickListGeneration = styled.div`
 	}
 
 	.line-display {
-		background-color: ${purp};
-		box-shadow: 0px 0px 200px inset ${outerBackgroundColor};
+		background-color: rgba(119, 0, 166, 0.7);
+		/* box-shadow: 0px 0px 200px inset ${outerBackgroundColor}; */
 
 		height: 325px;
 
@@ -63,7 +63,7 @@ export const StyledTrickListGeneration = styled.div`
 			color: white;
 			background-color: rgba(255, 255, 255, 0.18);
 			border-radius: 5px;
-			width: 85%;
+			width: 90%;
 			margin: 20px auto;
 			padding: 2%;
 		}
@@ -71,6 +71,5 @@ export const StyledTrickListGeneration = styled.div`
 		width: 90%;
 		margin: 0 auto 5px auto;
 		border-radius: 20px;
-		margin-top: 0px;
 	}
 `;

@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import { purp, outerBackgroundColor } from "../../../../../../App.variables";
 export const StyledPlayOpenGame = styled.div`
-	background-color: ${purp};
-	box-shadow: 0px 0px 200px inset ${outerBackgroundColor};
+	background-color: rgba(119, 0, 166, 0.7);
+	/* box-shadow: 0px 0px 200px inset ${outerBackgroundColor}; */
 	display: flex;
 	flex-direction: column;
-	height: 70vh;
-	width: 85%;
+	height: 65vh;
+	width: 90%;
 	margin: 0 auto;
 	border-radius: 5px;
 	color: white;
@@ -70,10 +70,8 @@ export const StyledPlayOpenGame = styled.div`
 		&-controls {
 			display: flex;
 			flex-direction: row;
-			width: 85%;
-			justify-content: center;
-			position: absolute;
-			bottom: 10%;
+			width: 90%;
+			margin: 15px auto;
 
 			button {
 				width: 75px;
@@ -82,7 +80,7 @@ export const StyledPlayOpenGame = styled.div`
 				background-color: lime;
 				border: none;
 				border-radius: 5px;
-				box-shadow: 0px 0px 10px inset ${purp};
+				box-shadow: 0px 0px 5px inset ${purp}, 0px 0px 5px black;
 				font-weight: bold;
 			}
 
@@ -100,6 +98,7 @@ export const StyledPlayOpenGame = styled.div`
 	#next-button {
 		width: 100%;
 		height: 100px;
+		background-color: orange;
 	}
 
 	#current-trick {
@@ -112,5 +111,6 @@ export const StyledPlayOpenGame = styled.div`
 		background-color: rgba(255, 255, 255, 0.18);
 		padding: 2%;
 		overflow: scroll;
+		box-shadow: 0px 0px 5px black;
 	}
 `;

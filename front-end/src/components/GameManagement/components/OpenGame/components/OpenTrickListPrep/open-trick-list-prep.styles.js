@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { purp, outerBackgroundColor } from "../../../../../../App.variables";
 
 export const StyledOpenTrickListPrep = styled.div`
-	background-color: ${purp};
-	box-shadow: 0px 0px 100px inset ${outerBackgroundColor};
-	width: 85%;
+	background-color: rgba(119, 0, 166, 0.7);
+	/* box-shadow: 0px 0px 100px inset ${outerBackgroundColor}; */
+	width: 90%;
 	margin: 0 auto;
 	border-radius: 5px;
 	height: 650px;
@@ -33,12 +33,12 @@ export const StyledOpenTrickListPrep = styled.div`
 			align-items: center;
 			justify-content: center;
 			font-weight: bold;
-			box-shadow: 0px 0px 10px inset ${purp};
+			box-shadow: 0px 0px 10px inset ${purp}, 0px 0px 5px black;
 		}
 	}
 
 	.creation-form {
-		width: 85%;
+		width: 90%;
 		margin: 0 auto;
 		background-color: rgba(255, 255, 255, 0.18);
 		border-radius: 5px;
@@ -57,7 +57,7 @@ export const StyledOpenTrickListPrep = styled.div`
 			height: 50px;
 			margin-bottom: 5px;
 			background-color: lime;
-			box-shadow: 0px 0px 10px inset ${purp};
+			box-shadow: 0px 0px 5px inset ${purp}, 0px 0px 5px black;
 			border: none;
 			border-radius: 5px;
 			font-weight: bold;
@@ -74,7 +74,7 @@ export const StyledOpenTrickListPrep = styled.div`
 		overflow-y: scroll;
 		max-height: 450px;
 		border-radius: 5px;
-
+		box-shadow: 0px 0px 5px black;
 		&-header {
 			font-weight: bold;
 			font-size: 24px;
@@ -89,7 +89,7 @@ export const StyledOpenTrickListPrep = styled.div`
 				height: 30px;
 				min-width: 50px;
 				background-color: lime;
-				box-shadow: 0px 0px 10px inset ${purp};
+				box-shadow: 0px 0px 5px inset ${purp}, 0px 0px 5px black;
 				border-radius: 5px;
 				border: none;
 				font-weight: bold;
