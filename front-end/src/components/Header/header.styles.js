@@ -11,20 +11,22 @@ export const StyledHeader = styled.div`
 	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
 		url(${headerBackground});
 	background-size: contain;
+	margin-bottom: 15px;
 	h1 {
 		margin-bottom: 0;
 		font-size: 72px;
 		background: -webkit-linear-gradient(#93e506, lime);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		margin-top: 0px;
+		margin: 0;
 	}
 
 	h2 {
 		font-size: 32px;
-		margin-top: 0;
+		margin: 0;
 		background: -webkit-linear-gradient(#e5a506, orange);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+		padding: 0;
 	}
 `;
