@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { purp, outerBackgroundColor } from "../../App.variables";
 export const StyledTrickListGeneration = styled.div`
 	margin: 0;
-	max-height: 95vh;
-	overflow: scroll;
+	max-height: 90vh;
+	overflow: hidden;
 
 	button {
 		width: 50%;
@@ -27,11 +27,11 @@ export const StyledTrickListGeneration = styled.div`
 			box-shadow: 0px 0px 100px inset ${outerBackgroundColor};
 			display: flex;
 			flex-direction: column;
-			width: 85%;
+			width: 90%;
 			border-radius: 20px;
 			color: lime;
 			margin: 0 auto;
-			padding-bottom: 2%;
+			padding-bottom: 10px;
 
 			select {
 				width: 30%;
@@ -47,8 +47,8 @@ export const StyledTrickListGeneration = styled.div`
 	.line-display {
 		background-color: ${purp};
 		box-shadow: 0px 0px 200px inset ${outerBackgroundColor};
-		min-height: 300px;
-		/* max-height: 250px; */
+
+		height: 325px;
 
 		overflow-y: scroll;
 		-ms-overflow-style: none;
@@ -68,7 +68,7 @@ export const StyledTrickListGeneration = styled.div`
 			padding: 2%;
 		}
 
-		width: 85%;
+		width: 90%;
 		margin: 0 auto 5px auto;
 		border-radius: 20px;
 		margin-top: 0px;
