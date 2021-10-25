@@ -87,37 +87,69 @@ const PlayKenGame = ({ setStartGame, gameString }) => {
 
 	return (
 		<StyledPlayKenGame>
-			<div className="game-string-row">Playing to: {gameString}</div>
+			<div className="game-string-col">
+				<div className="game-string-col-details">Playing to </div>{" "}
+				<div className="game-string-col-details">{gameString}</div>
+			</div>
 			<div className="players-section">
-				<div className="player-section-player">
-					Player One: {playerOneDisplay}
-					{playerOneProveIt ? "Prove it" : "Prove It used"}
+				<div className="players-section-player">
+					<div className="players-section-player-details">
+						Player One
+					</div>
+					<div className="players-section-player-details">
+						{playerOneDisplay}
+					</div>
+					<div className="players-section-player-details">
+						{playerOneProveIt ? "Prove it" : "Prove It used"}
+					</div>
 				</div>
-				<div className="player-section-player">
-					Player Two: {playerTwoDisplay}
-					{playerTwoProveIt ? "Prove it" : "Prove It used"}
+				<div className="players-section-player">
+					<div className="players-section-player-details">
+						Player Two
+					</div>
+					<div className="players-section-player-details">
+						{playerTwoDisplay}
+					</div>
+					<div className="players-section-player-details">
+						{playerTwoProveIt ? "Prove it" : "Prove It used"}
+					</div>
 				</div>
 			</div>
-			<button onClick={() => increasePlayerOneScore()}>
-				Player One Letter
-			</button>
-			<button onClick={() => increasePlayerTwoScore()}>
-				Player Two Letter
-			</button>
-			<button onClick={() => reducePlayerOneScore()}>
-				Remove Player One Letter
-			</button>
-			<button onClick={() => reducePlayerTwoScore()}>
-				Remove Player Two Letter
-			</button>
-			<button onClick={() => setPlayerOneProveIt(true)}>
-				Restore Player One Prove It
-			</button>
-			<button onClick={() => setPlayerTwoProveIt(true)}>
-				Restore Player Two Prove It
-			</button>
-			<button onClick={() => setStartGame(false)}>Jack! Go Back!</button>{" "}
-			This is clearly under construction.
+			<div className="button-section">
+				<div className="increasing-buttons">
+					<button
+						className={playerOneProveIt ? null : "last"}
+						onClick={() => increasePlayerOneScore()}
+					>
+						Player One Letter
+					</button>
+					<button
+						className={playerTwoProveIt ? null : "last"}
+						onClick={() => increasePlayerTwoScore()}
+					>
+						Player Two Letter
+					</button>
+				</div>
+				<div className="restoring-buttons">
+					<button onClick={() => reducePlayerOneScore()}>
+						Remove Player One Letter
+					</button>
+					<button onClick={() => setPlayerOneProveIt(true)}>
+						Restore Player One Prove It
+					</button>
+				</div>
+				<div className="restoring-buttons">
+					<button onClick={() => reducePlayerTwoScore()}>
+						Remove Player Two Letter
+					</button>
+					<button onClick={() => setPlayerTwoProveIt(true)}>
+						Restore Player Two Prove It
+					</button>
+				</div>
+				<button onClick={() => setStartGame(false)}>
+					Jack! Go Back!
+				</button>{" "}
+			</div>
 		</StyledPlayKenGame>
 	);
 };
