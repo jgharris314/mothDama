@@ -29,7 +29,7 @@ export const StyledTrickListGeneration = styled.div`
 			width: 45%;
 			border-radius: 20px;
 			color: lime;
-			margin: 0 auto;
+			margin: 10px auto 0px auto;
 			padding-bottom: 10px;
 			justify-content: center;
 
