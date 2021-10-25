@@ -29,7 +29,7 @@ const KenGame = () => {
 					gameString={gameString}
 				/>
 			) : (
-				<div>
+				<div className="ken-game-form">
 					<form onSubmit={submitHandler}>
 						<textarea
 							className=""
