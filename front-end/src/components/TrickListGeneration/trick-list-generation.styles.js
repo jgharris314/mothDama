@@ -34,12 +34,12 @@ export const StyledTrickListGeneration = styled.div`
 			justify-content: center;
 
 			select {
-				width: 30%;
+				width: 50%;
 				margin: 0 auto;
 			}
 			p {
 				padding: 0;
-				margin: 8px;
+				margin: 0px;
 			}
 		}
 	}
