@@ -89,11 +89,11 @@ const PlayOpenGame = ({
 					<div className="open-game-scores-row">{playerTwoScore}</div>
 				</div>
 			</div>
+
 			<div className="open-game-remaining">
-				<div className="open-game-remaining-row">
-					Tricks remaining: {gameTrickList.length}
-				</div>
+				Tricks remaining: {gameTrickList.length}
 			</div>
+
 			<div className="open-game-current">
 				<div className="open-game-current-row">Lace it!</div>
 				<div className="open-game-current-row" id="current-trick">

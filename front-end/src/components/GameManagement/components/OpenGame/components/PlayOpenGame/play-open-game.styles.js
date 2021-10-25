@@ -40,17 +40,10 @@ export const StyledPlayOpenGame = styled.div`
 
 		&-remaining {
 			display: flex;
-			flex-direction: column;
+			flex-direction: row;
 			align-items: center;
 			width: 100%;
-
-			&-row {
-				display: flex;
-				flex-direction: row;
-
-				justify-content: center;
-				width: 85%;
-			}
+			justify-content: center;
 		}
 
 		&-current {
