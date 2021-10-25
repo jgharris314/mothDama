@@ -152,8 +152,13 @@ const TrickListGeneration = () => {
 					</select>
 					<br />
 				</div>
+				<button
+					className="options-settings"
+					onClick={() => generateLine()}
+				>
+					Generate a line!
+				</button>
 			</div>
-			<button onClick={() => generateLine()}>Generate a line!</button>
 		</StyledTrickListGeneration>
 	);
 };

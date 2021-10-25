@@ -5,33 +5,33 @@ export const StyledTrickListGeneration = styled.div`
 	max-height: 90vh;
 	overflow: hidden;
 
-	button {
-		width: 50%;
-		height: 70px;
-		margin: 5px auto 100px auto;
-		font-size: 16px;
-		color: lime;
-		font-weight: bold;
-		border: none;
-		border-radius: 5px;
-		background-color: ${purp};
-		box-shadow: 0px 0px 100px inset ${outerBackgroundColor};
-	}
 	.options {
 		display: flex;
 		flex-direction: row;
-		margin-bottom: 5px;
+		margin: 0 auto 5px auto;
 		font-weight: bold;
+		width: 95%;
+		justify-content: center;
+		align-items: center;
+
+		button {
+			border: none;
+			height: 90px;
+			box-shadow: 0px 0px 10px orange;
+			font-weight: bold;
+			font-size: 16px;
+		}
 		&-settings {
 			background-color: rgba(119, 0, 166, 0.7);
 			/* box-shadow: 0px 0px 100px inset ${outerBackgroundColor}; */
 			display: flex;
 			flex-direction: column;
-			width: 90%;
+			width: 45%;
 			border-radius: 20px;
 			color: lime;
 			margin: 0 auto;
 			padding-bottom: 10px;
+			justify-content: center;
 
 			select {
 				width: 30%;
@@ -48,7 +48,7 @@ export const StyledTrickListGeneration = styled.div`
 		background-color: rgba(119, 0, 166, 0.7);
 		/* box-shadow: 0px 0px 200px inset ${outerBackgroundColor}; */
 
-		height: 325px;
+		height: 380px;
 
 		overflow-y: scroll;
 		-ms-overflow-style: none;
