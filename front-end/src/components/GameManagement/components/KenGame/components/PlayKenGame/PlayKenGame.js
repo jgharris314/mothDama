@@ -27,7 +27,6 @@ const PlayKenGame = ({ setStartGame, gameString }) => {
 			setPlayerOneScore(playerOneScore + 1);
 		} else if (playerOneScore === scoreLimit - 1 && playerOneProveIt) {
 			setPlayerOneProveIt(false);
-			window.alert(" Player One Prove It used");
 		} else {
 			if (window.confirm("Confirm Player Two win")) {
 				window.alert("Player Two Wins");
@@ -41,7 +40,6 @@ const PlayKenGame = ({ setStartGame, gameString }) => {
 			setPlayerTwoScore(playerTwoScore + 1);
 		} else if (playerTwoScore === scoreLimit - 1 && playerTwoProveIt) {
 			setPlayerTwoProveIt(false);
-			window.alert(" Player Two Prove It used");
 		} else {
 			if (window.confirm("Confirm Player One win")) {
 				window.alert("Player One Wins");
@@ -134,16 +132,16 @@ const PlayKenGame = ({ setStartGame, gameString }) => {
 					<button onClick={() => reducePlayerOneScore()}>
 						Remove Player One Letter
 					</button>
-					<button onClick={() => setPlayerOneProveIt(true)}>
-						Restore Player One Prove It
+					<button onClick={() => setPlayerTwoProveIt(true)}>
+						Restore Player Two Prove It
 					</button>
 				</div>
 				<div className="restoring-buttons">
+					<button onClick={() => setPlayerOneProveIt(true)}>
+						Restore Player One Prove It
+					</button>
 					<button onClick={() => reducePlayerTwoScore()}>
 						Remove Player Two Letter
-					</button>
-					<button onClick={() => setPlayerTwoProveIt(true)}>
-						Restore Player Two Prove It
 					</button>
 				</div>
 				<button onClick={() => setStartGame(false)}>
