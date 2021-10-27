@@ -9,6 +9,11 @@ export const StyledTimer = styled.div`
 	width: 95%;
 	margin: 5px auto;
 	font-size: 24px;
+
+	h2 {
+		padding: 0;
+		margin: 0;
+	}
 	.progress {
 		margin: 15px auto;
 		padding: 2px;
