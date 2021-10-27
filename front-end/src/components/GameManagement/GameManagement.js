@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { StyledGameManagement } from "./game-management.styles.js";
 import OpenGame from "./components/OpenGame/OpenGame.js";
 import KenGame from "./components/KenGame/KenGame.js";
+import FreestyleGame from "./components/FreestyleGame/FreestyleGame.js";
 import Header from "../Header/Header.js";
 const GameManagement = () => {
 	const gameModes = ["Open", "KEN", "Freestyle"];
@@ -19,6 +20,7 @@ const GameManagement = () => {
 			</div>
 			{gameState === "open" && <OpenGame />}
 			{gameState === "ken" && <KenGame />}
+			{gameState === "freestyle" && <FreestyleGame />}
 		</StyledGameManagement>
 	);
 };

@@ -132,16 +132,16 @@ const PlayKenGame = ({ setStartGame, gameString }) => {
 					<button onClick={() => reducePlayerOneScore()}>
 						Remove Player One Letter
 					</button>
-					<button onClick={() => setPlayerTwoProveIt(true)}>
-						Restore Player Two Prove It
+					<button onClick={() => reducePlayerTwoScore()}>
+						Remove Player Two Letter
 					</button>
 				</div>
 				<div className="restoring-buttons">
 					<button onClick={() => setPlayerOneProveIt(true)}>
 						Restore Player One Prove It
 					</button>
-					<button onClick={() => reducePlayerTwoScore()}>
-						Remove Player Two Letter
+					<button onClick={() => setPlayerTwoProveIt(true)}>
+						Restore Player Two Prove It
 					</button>
 				</div>
 				<button onClick={() => setStartGame(false)}>

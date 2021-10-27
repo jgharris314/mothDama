@@ -17,7 +17,7 @@ export const StyledPlayKenGame = styled.div`
 		border: none;
 		background-color: lime;
 		font-weight: bold;
-		box-shadow: 0px 0px 5px orange;
+		box-shadow: 0px 0px 5px black;
 		border-radius: 5px;
 		align-items: center;
 		justify-content: center;
@@ -35,7 +35,7 @@ export const StyledPlayKenGame = styled.div`
 		align-items: center;
 		font-size: 28px;
 		border-radius: 5px;
-
+		box-shadow: 0px 0px 5px black;
 		&-details {
 			display: flex;
 			flex-direction: row;
@@ -51,12 +51,11 @@ export const StyledPlayKenGame = styled.div`
 		&-player {
 			display: flex;
 			flex-direction: column;
-			/* margin: 0 auto; */
-			/* padding: 2%; */
 			border-radius: 5px;
 			background-color: rgba(255, 255, 255, 0.18);
 			margin: 5px auto;
-			width: 100%;
+			width: 45%;
+			box-shadow: 0px 0px 5px black;
 			&-details {
 				display: flex;
 				flex-direction: row;

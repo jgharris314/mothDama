@@ -14,7 +14,7 @@ export const StyledGameManagement = styled.div`
 			width: 25%;
 			height: 30px;
 			background-color: lime;
-			box-shadow: 0px 0px 5px orange;
+			box-shadow: 0px 0px 5px black;
 			border-radius: 5px;
 			border: none;
 			font-weight: bold;

@@ -1,9 +1,8 @@
 import styled from "styled-components";
-// import { purp } from "../../../../App.variables";
+
 export const StyledKenGame = styled.div`
 	margin: 0 auto;
 	background-color: rgba(119, 0, 166, 0.7);
-	height: 60vh;
 	width: 90%;
 	border-radius: 5px;
 	padding: 2%;
@@ -12,7 +11,6 @@ export const StyledKenGame = styled.div`
 	.ken-game-form {
 		display: flex;
 		padding: 4%;
-		/* background-color: rgba(255, 255, 255, 0.1); */
 		border-radius: 5px;
 		box-shadow: 0px 0px 5px black;
 		flex-direction: column;
@@ -37,7 +35,7 @@ export const StyledKenGame = styled.div`
 			border: none;
 			background-color: lime;
 			font-weight: bold;
-			box-shadow: 0px 0px 5px orange;
+			box-shadow: 0px 0px 5px black;
 			border-radius: 5px;
 			align-items: center;
 			justify-content: center;

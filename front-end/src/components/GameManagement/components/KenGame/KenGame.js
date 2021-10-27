@@ -20,14 +20,6 @@ const KenGame = () => {
 		setStartGame(true);
 	};
 
-	// const renderGameString = () => {
-	// 	setDisplayGameString(gameString);
-	// };
-
-	// useEffect(() => {
-	// 	renderGameString();
-	// }, [formGameString]);
-
 	return (
 		<StyledKenGame>
 			{startGame ? (
