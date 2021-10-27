@@ -12,7 +12,7 @@ export const StyledDurationAdjust = styled.div`
 	margin: 5px auto;
 
 	button {
-		margin: 0px 5px;
+		margin: 5px 5px;
 	}
 	.duration-adjust-row {
 		display: flex;

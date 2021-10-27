@@ -47,7 +47,8 @@ const DurationAdjust = ({ values, setValues }) => {
 		<StyledDurationAdjust>
 			<div className="duration-adjust-row">
 				<div className="duration-adjust-col">
-					Session Duration: {minutesToDuration(values.focusVal)}
+					Session Duration:{" "}
+					<div>{minutesToDuration(values.focusVal)}</div>
 					<div className="">
 						<button
 							type="button"
@@ -71,7 +72,8 @@ const DurationAdjust = ({ values, setValues }) => {
 				</div>
 
 				<div className="duration-adjust-col">
-					Break Duration: {minutesToDuration(values.breakVal)}
+					Break Duration:{" "}
+					<div>{minutesToDuration(values.breakVal)}</div>
 					<div className="">
 						<button
 							type="button"
