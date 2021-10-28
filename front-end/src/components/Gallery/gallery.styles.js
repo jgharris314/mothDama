@@ -14,6 +14,13 @@ export const StyledGallery = styled.div`
 		padding-top: 2%;
 		padding-bottom: 2%;
 
+		&-img {
+			height: 250px;
+			width: 95%;
+			margin: 0 auto;
+			box-shadow: 0px 0px 5px black;
+		}
+
 		&-list {
 			display: flex;
 			flex-direction: row;

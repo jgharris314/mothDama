@@ -20,13 +20,12 @@ const Gallery = () => {
 			<Header headerMemo={"1000 words"} />
 			<div className="gallery">
 				<div
+					className="gallery-img"
 					style={{
+						backgroundSize: "contain",
+						backgroundRepeat: "no-repeat",
 						background: `url(${imgArray[count]})`,
-						backgroundSize: "100%",
-						height: "250px",
-						width: "95%",
-						margin: "0 auto",
-						boxShadow: "0px 0px 5px black",
+						backgroundPosition: "center",
 					}}
 				></div>
 				<div className="gallery-list">

@@ -5,6 +5,7 @@ const Shop = () => {
 	return (
 		<StyledShop>
 			<Header headerMemo={"Give me all your money"} />
+			<div className="shop">coming soon</div>
 		</StyledShop>
 	);
 };
