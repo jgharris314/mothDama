@@ -16,6 +16,7 @@ export const StyledPlayOpenGame = styled.div`
 	color: white;
 	font-weight: bold;
 	font-size: 26px;
+	padding-top: 5px;
 
 	h3 {
 		font-size: 32px;
