@@ -5,3 +5,4 @@ export const perrywinkle = "rgba(146,161,213,1)";
 export const darkOrange = "rgba(210,74,0,1)";
 export const purp = "rgba(119,0,166,1)";
 export const whiteWindow = "rgba(255,255,255,.18)";
+export const translucentPurp = "rgba(119, 0, 166, 0.7)";

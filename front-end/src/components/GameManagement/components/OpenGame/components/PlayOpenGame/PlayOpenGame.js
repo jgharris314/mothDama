@@ -81,12 +81,18 @@ const PlayOpenGame = ({
 			{/* <h3>{trickList.name}</h3> */}
 			<div className="open-game-container">
 				<div className="open-game-scores">
-					<div className="open-game-scores-row">Player One</div>
-					<div className="open-game-scores-row">{playerOneScore}</div>
+					<div className="open-game-scores-row">
+						Player One
+						<br />
+						{playerOneScore}
+					</div>
 				</div>
 				<div className="open-game-scores">
-					<div className="open-game-scores-row">Player Two</div>
-					<div className="open-game-scores-row">{playerTwoScore}</div>
+					<div className="open-game-scores-row">
+						Player Two
+						<br />
+						{playerTwoScore}
+					</div>
 				</div>
 			</div>
 

@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import { purp, outerBackgroundColor } from "../../../../../../App.variables";
+import {
+	purp,
+	outerBackgroundColor,
+	whiteWindow,
+} from "../../../../../../App.variables";
 export const StyledPlayOpenGame = styled.div`
 	background-color: rgba(119, 0, 166, 0.7);
 	/* box-shadow: 0px 0px 200px inset ${outerBackgroundColor}; */
@@ -35,6 +39,9 @@ export const StyledPlayOpenGame = styled.div`
 				justify-content: center;
 				text-align: center;
 				width: 85%;
+				background-color: ${whiteWindow};
+				border-radius: 5px;
+				box-shadow: 0px 0px 5px black;
 			}
 		}
 
@@ -101,9 +108,14 @@ export const StyledPlayOpenGame = styled.div`
 		justify-content: center;
 		/* margin-bottom: 20%; */
 		border-radius: 5px;
-		background-color: rgba(255, 255, 255, 0.18);
+		background-color: ${whiteWindow};
 		padding: 2%;
 		overflow: scroll;
 		box-shadow: 0px 0px 5px black;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+		::-webkit-scrollbar {
+			display: none;
+		}
 	}
 `;
