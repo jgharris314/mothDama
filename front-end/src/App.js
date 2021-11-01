@@ -10,8 +10,8 @@ import Shop from "./components/Shop/Shop";
 import ReactGA from "react-ga";
 import RouteChangeTracker from "./RouteChangeTracker";
 function App() {
-	const TRACKING_ID = "G-KFRY691PSC";
-	ReactGA.initialize(TRACKING_ID);
+	// const TRACKING_ID = "G-KFRY691PSC";
+	// ReactGA.initialize(TRACKING_ID);
 	return (
 		<div className="App">
 			<NavBar />
