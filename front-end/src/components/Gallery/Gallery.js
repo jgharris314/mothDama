@@ -15,6 +15,7 @@ const Gallery = () => {
 			setCount(0);
 		}
 	};
+	document.title = "mothDama - Pretties";
 	return (
 		<StyledGallery>
 			<Header headerMemo={"1000 words"} />

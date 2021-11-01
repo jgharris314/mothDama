@@ -17,13 +17,13 @@ export const StyledTrickListGeneration = styled.div`
 		button {
 			border: none;
 			height: 90px;
-			box-shadow: 0px 0px 10px orange;
+			box-shadow: 0px 0px 5px orange;
 			font-weight: bold;
 			font-size: 16px;
 		}
 		&-settings {
 			background-color: rgba(119, 0, 166, 0.7);
-			/* box-shadow: 0px 0px 100px inset ${outerBackgroundColor}; */
+			box-shadow: 0px 0px 5px lime;
 			display: flex;
 			flex-direction: column;
 			width: 45%;
@@ -66,6 +66,7 @@ export const StyledTrickListGeneration = styled.div`
 			width: 90%;
 			margin: 20px auto;
 			padding: 2%;
+			box-shadow: 0px 0px 5px black;
 		}
 
 		width: 90%;

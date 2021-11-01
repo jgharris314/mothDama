@@ -7,7 +7,7 @@ import Header from "../Header/Header.js";
 const GameManagement = () => {
 	const gameModes = ["Open", "KEN", "Freestyle"];
 	const [gameState, setGameState] = useState("none");
-
+	document.title = "mothDama - Games";
 	return (
 		<StyledGameManagement>
 			<Header headerMemo={"Dare to believe"} />

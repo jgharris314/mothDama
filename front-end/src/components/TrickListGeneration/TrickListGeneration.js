@@ -119,7 +119,7 @@ const TrickListGeneration = () => {
 		);
 		prepTricks();
 	}, [allTricks, numberOfTricks, selectedDifficulty]);
-
+	document.title = "mothDama - Lines";
 	return (
 		<StyledTrickListGeneration>
 			<Header headerMemo={"There is no easy"} />

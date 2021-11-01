@@ -7,7 +7,7 @@ const OpenGame = () => {
 	const defaultTrickList = { id: 0, tricks: [], name: "" };
 	const [trickList, setTrickList] = useState(defaultTrickList);
 	const [startGame, setStartGame] = useState(false);
-
+	document.title = "mothDama - Open";
 	return (
 		<StyledOpenGame>
 			{startGame ? (

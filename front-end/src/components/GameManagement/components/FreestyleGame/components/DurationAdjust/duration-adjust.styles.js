@@ -26,8 +26,6 @@ export const StyledDurationAdjust = styled.div`
 		display: flex;
 		flex-direction: column;
 		width: 50%;
-		/* justify-content: center; */
-		/* justify-content: space-around; */
 	}
 
 	.minus {

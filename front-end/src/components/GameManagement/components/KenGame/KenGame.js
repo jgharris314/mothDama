@@ -19,7 +19,7 @@ const KenGame = () => {
 		}
 		setStartGame(true);
 	};
-
+	document.title = "mothDama - KEN";
 	return (
 		<StyledKenGame>
 			{startGame ? (

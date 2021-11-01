@@ -9,6 +9,7 @@ const LandingPage = () => {
 	const isBigScreen = useMediaQuery({ query: "(min-width: 1280px)" });
 	// const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 	const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
+	document.title = "mothDama - Step in to the Light";
 	return (
 		<StyledLandingPage>
 			{(isBigScreen || isPortrait) && (

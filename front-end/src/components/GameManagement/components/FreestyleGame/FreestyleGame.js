@@ -51,6 +51,8 @@ const FreestyleGame = () => {
 		},
 		values.isRunning ? 1000 : null
 	);
+
+	document.title = "mothDama - Freestyle";
 	return (
 		<StyledFreestyleGame>
 			<DurationAdjust values={values} setValues={setValues} />

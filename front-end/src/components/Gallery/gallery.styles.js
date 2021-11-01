@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { purp, translucentPurp, whiteWindow } from "../../App.variables";
 
 export const StyledGallery = styled.div`
-	/* height: 100vh; */
 	margin: 0;
 
 	.gallery {
