@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { translucentPurp, whiteWindow } from "../../App.variables";
+import { translucentPurp } from "../../App.variables";
 export const StyledShop = styled.div`
 	.shop {
 		background-color: ${translucentPurp};
@@ -8,5 +8,6 @@ export const StyledShop = styled.div`
 		box-shadow: 0px 0px 5px black;
 		margin: 0 auto;
 		color: white;
+		margin-top: 5px;
 	}
 `;

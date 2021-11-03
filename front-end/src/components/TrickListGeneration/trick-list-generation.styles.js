@@ -45,7 +45,9 @@ export const StyledTrickListGeneration = styled.div`
 	}
 
 	.line-display {
+		color: white;
 		background-color: rgba(119, 0, 166, 0.7);
+
 		/* box-shadow: 0px 0px 200px inset ${outerBackgroundColor}; */
 
 		height: 380px;
@@ -60,7 +62,7 @@ export const StyledTrickListGeneration = styled.div`
 		p {
 			font-size: 26px;
 			font-weight: bold;
-			color: white;
+			/* color: white; */
 			background-color: rgba(255, 255, 255, 0.18);
 			border-radius: 5px;
 			width: 90%;

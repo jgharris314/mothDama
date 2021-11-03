@@ -6,6 +6,7 @@ const PlayOpenGame = ({
 	setTrickList,
 	setStartGame,
 	defaultTricklist,
+	styles,
 }) => {
 	const [gameTrickList, setGameTrickList] = useState(trickList.tricks);
 	const [usedTrickList, setUsedTrickList] = useState([]);
@@ -77,8 +78,7 @@ const PlayOpenGame = ({
 		}
 	};
 	return (
-		<StyledPlayOpenGame>
-			{/* <h3>{trickList.name}</h3> */}
+		<StyledPlayOpenGame style={styles ? styles.background : null}>
 			<div className="open-game-container">
 				<div className="open-game-scores">
 					<div className="open-game-scores-row">
@@ -109,20 +109,45 @@ const PlayOpenGame = ({
 
 			<div className="open-game-controls">
 				<div className="open-game-controls-col">
-					<button onClick={increasePlayerOneScore}>P1 +</button>
-					<button onClick={reducePlayerOneScore}>P1 -</button>
+					<button
+						style={styles ? styles.otherButtons : null}
+						onClick={increasePlayerOneScore}
+					>
+						P1 +
+					</button>
+					<button
+						style={styles ? styles.otherButtons : null}
+						onClick={reducePlayerOneScore}
+					>
+						P1 -
+					</button>
 				</div>
 				<div className="open-game-controls-col">
-					<button onClick={nextTrick} id="next-button">
+					<button
+						style={styles ? styles.nextBtn : null}
+						onClick={nextTrick}
+						id="next-button"
+					>
 						{gameTrickList.length ? "Next Trick" : "Re-shuffle"}
 					</button>
 				</div>
 				<div className="open-game-controls-col">
-					<button onClick={increasePlayerTwoScore}>P2 +</button>
-					<button onClick={reducePlayerTwoScore}>P2 -</button>
+					<button
+						style={styles ? styles.otherButtons : null}
+						onClick={increasePlayerTwoScore}
+					>
+						P2 +
+					</button>
+					<button
+						style={styles ? styles.otherButtons : null}
+						onClick={reducePlayerTwoScore}
+					>
+						P2 -
+					</button>
 				</div>
 				<div className="open-game-controls-col">
 					<button
+						style={styles ? styles.otherButtons : null}
 						onClick={() =>
 							window.confirm("End game?")
 								? setStartGame(false)
@@ -132,6 +157,7 @@ const PlayOpenGame = ({
 						Return to trick list
 					</button>
 					<button
+						style={styles ? styles.otherButtons : null}
 						onClick={() =>
 							window.confirm("End game?")
 								? returnToPresets()

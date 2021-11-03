@@ -3,7 +3,7 @@ import { StyledOpenGame } from "./open-game.styles";
 import OpenTrickListPrep from "./components/OpenTrickListPrep/OpenTrickListPrep";
 import PlayOpenGame from "./components/PlayOpenGame/PlayOpenGame";
 
-const OpenGame = () => {
+const OpenGame = ({ styles }) => {
 	const defaultTrickList = { id: 0, tricks: [], name: "" };
 	const [trickList, setTrickList] = useState(defaultTrickList);
 	const [startGame, setStartGame] = useState(false);
@@ -16,6 +16,7 @@ const OpenGame = () => {
 					setStartGame={setStartGame}
 					setTrickList={setTrickList}
 					defaultTricklist={defaultTrickList}
+					styles={styles.play}
 				/>
 			) : (
 				<OpenTrickListPrep
@@ -23,6 +24,7 @@ const OpenGame = () => {
 					setTrickList={setTrickList}
 					setStartGame={setStartGame}
 					defaultTrickList={defaultTrickList}
+					styles={styles.prep}
 				/>
 			)}
 		</StyledOpenGame>

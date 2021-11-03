@@ -1,20 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactPlayer from "react-player";
-import Header from "../Header/Header";
+
 import { useMediaQuery } from "react-responsive";
 
 import { StyledLandingPage } from "./landing-pages.styles";
 
-const LandingPage = () => {
+const LandingPage = ({ setHeaderMemo, styles }) => {
 	const isBigScreen = useMediaQuery({ query: "(min-width: 1280px)" });
-	// const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
-	const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
+
 	document.title = "mothDama - Step in to the Light";
+	setHeaderMemo("Step in to the Light");
 	return (
-		<StyledLandingPage>
-			{(isBigScreen || isPortrait) && (
-				<Header headerMemo={"Step in to the light"} />
-			)}
+		<StyledLandingPage style={styles ? styles : null}>
 			<div className="video-player">
 				<div className="video-player-col">
 					{/* i need a responsive width for the video. i feel if i can detect screen size, then link to mobile youtube instead */}

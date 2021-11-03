@@ -33,7 +33,7 @@ export const StyledOpenTrickListPrep = styled.div`
 			align-items: center;
 			justify-content: center;
 			font-weight: bold;
-			box-shadow: 0px 0px 10px inset ${purp}, 0px 0px 5px black;
+			box-shadow: 0px 0px 10px inset black, 0px 0px 5px black;
 		}
 	}
 
@@ -43,7 +43,7 @@ export const StyledOpenTrickListPrep = styled.div`
 		background-color: rgba(255, 255, 255, 0.18);
 		border-radius: 5px;
 		color: white;
-		box-shadow: 0px 0px 5px black;
+		box-shadow: 0px 0px 10px inset black, 0px 0px 5px black;
 		padding: 2%;
 		&-header {
 			padding-top: 5px;

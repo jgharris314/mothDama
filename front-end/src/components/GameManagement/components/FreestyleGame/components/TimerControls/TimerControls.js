@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "../../utils/classNames";
 import { StyledTimerControls } from "./timer-controls.styles";
-const TimerControls = ({ values, setValues, initialState }) => {
+const TimerControls = ({ values, setValues, initialState, styles }) => {
 	function playPause({ target }) {
 		target.children[0].className === "oi oi-media-play" &&
 		!values.displayTimer
@@ -31,6 +31,7 @@ const TimerControls = ({ values, setValues, initialState }) => {
 							data-testid="play-pause"
 							title="Start or pause timer"
 							onClick={playPause}
+							style={styles ? styles.btn : null}
 						>
 							{
 								<span
@@ -48,6 +49,7 @@ const TimerControls = ({ values, setValues, initialState }) => {
 							className="stop-btn"
 							title="Stop the session"
 							onClick={stopTimer}
+							style={styles ? styles.undoBtn : null}
 						>
 							Stop
 						</button>
