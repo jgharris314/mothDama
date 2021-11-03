@@ -19,7 +19,7 @@ export const StyledHeader = styled.div`
 	}
 
 	h2 {
-		font-size: 32px;
+		font-size: 28px;
 		margin: 0px;
 		color: orange;
 		padding: 0px;

@@ -6,7 +6,7 @@ export const StyledNavBar = styled.div`
 	background-color: ${purp};
 	box-shadow: 0px 0px 200px inset ${outerBackgroundColor};
 	position: fixed;
-
+	height: 55px;
 	.nav-bar-ul {
 		list-style: none;
 		display: flex;
