@@ -14,7 +14,6 @@ export const StyledNavBar = styled.div`
 		min-height: 30px;
 		justify-content: space-around;
 		padding-left: 0px;
-
 		&-item {
 			font-size: 14px;
 			display: flex;
@@ -23,10 +22,12 @@ export const StyledNavBar = styled.div`
 			text-decoration: none;
 			color: lime;
 			font-weight: bold;
-			padding: 8px;
+			padding: 3px;
 			/* margin: 1%; */
 			box-shadow: 0px 0px 3px orange;
 			border-radius: 5px;
+			/* margin-top: 0px; */
+			/* align-items: center; */
 			:hover {
 				color: lime;
 				cursor: pointer;
