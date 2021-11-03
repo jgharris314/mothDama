@@ -1,7 +1,7 @@
 import React from "react";
 import { minutesToDuration } from "../../utils/duration.js";
 import { StyledDurationAdjust } from "./duration-adjust.styles";
-const DurationAdjust = ({ values, setValues }) => {
+const DurationAdjust = ({ values, setValues, styles }) => {
 	const boundaryCheck = (dur, min, max) =>
 		dur > max ? max : dur < min ? min : dur;
 
@@ -56,6 +56,7 @@ const DurationAdjust = ({ values, setValues }) => {
 							id="minus"
 							onClick={focusHandler}
 							className="minus"
+							style={styles ? styles.undoBtn : null}
 						>
 							-
 						</button>
@@ -65,6 +66,7 @@ const DurationAdjust = ({ values, setValues }) => {
 							id="plus"
 							onClick={focusHandler}
 							className="plus"
+							style={styles ? styles.btn : null}
 						>
 							+
 						</button>
@@ -81,6 +83,7 @@ const DurationAdjust = ({ values, setValues }) => {
 							data-testid="decrease-break"
 							id="minus"
 							onClick={breakHandler}
+							style={styles ? styles.undoBtn : null}
 						>
 							-
 						</button>
@@ -90,6 +93,7 @@ const DurationAdjust = ({ values, setValues }) => {
 							data-testid="increase-break"
 							id="plus"
 							onClick={breakHandler}
+							style={styles ? styles.btn : null}
 						>
 							+
 						</button>

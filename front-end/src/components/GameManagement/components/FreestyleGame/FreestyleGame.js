@@ -4,7 +4,7 @@ import useInterval from "./utils/useInterval.js";
 import DurationAdjust from "./components/DurationAdjust/DurationAdjust";
 import Timer from "./components/Timer/Timer";
 import TimerControls from "./components/TimerControls/TimerControls";
-const FreestyleGame = () => {
+const FreestyleGame = ({ styles }) => {
 	const initialState = {
 		displayTimer: false,
 		focusVal: 5,
@@ -54,14 +54,19 @@ const FreestyleGame = () => {
 
 	document.title = "mothDama - Freestyle";
 	return (
-		<StyledFreestyleGame>
-			<DurationAdjust values={values} setValues={setValues} />
+		<StyledFreestyleGame style={styles ? styles.background : null}>
+			<DurationAdjust
+				values={values}
+				setValues={setValues}
+				styles={styles.buttons}
+			/>
 			<TimerControls
 				values={values}
 				setValues={setValues}
 				initialState={initialState}
+				styles={styles.buttons}
 			/>
-			<Timer values={values} />
+			<Timer values={values} styles={styles} />
 		</StyledFreestyleGame>
 	);
 };

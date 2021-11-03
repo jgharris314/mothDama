@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { StyledPlayKenGame } from "./play-ken-game.styles";
 
-const PlayKenGame = ({ setStartGame, gameString }) => {
+const PlayKenGame = ({ setStartGame, gameString, styles }) => {
 	const [playerOneScore, setPlayerOneScore] = useState(0);
 	const [playerTwoScore, setPlayerTwoScore] = useState(0);
 
@@ -116,12 +116,14 @@ const PlayKenGame = ({ setStartGame, gameString }) => {
 			<div className="button-section">
 				<div className="increasing-buttons">
 					<button
+						style={styles && playerOneProveIt ? styles.btn : null}
 						className={playerOneProveIt ? null : "last"}
 						onClick={() => increasePlayerOneScore()}
 					>
 						Player One Letter
 					</button>
 					<button
+						style={styles && playerTwoProveIt ? styles.btn : null}
 						className={playerTwoProveIt ? null : "last"}
 						onClick={() => increasePlayerTwoScore()}
 					>
@@ -129,22 +131,37 @@ const PlayKenGame = ({ setStartGame, gameString }) => {
 					</button>
 				</div>
 				<div className="restoring-buttons">
-					<button onClick={() => reducePlayerOneScore()}>
+					<button
+						onClick={() => reducePlayerOneScore()}
+						style={styles ? styles.undoBtn : null}
+					>
 						Remove Player One Letter
 					</button>
-					<button onClick={() => reducePlayerTwoScore()}>
+					<button
+						onClick={() => reducePlayerTwoScore()}
+						style={styles ? styles.undoBtn : null}
+					>
 						Remove Player Two Letter
 					</button>
 				</div>
 				<div className="restoring-buttons">
-					<button onClick={() => setPlayerOneProveIt(true)}>
+					<button
+						onClick={() => setPlayerOneProveIt(true)}
+						style={styles ? styles.undoBtn : null}
+					>
 						Restore Player One Prove It
 					</button>
-					<button onClick={() => setPlayerTwoProveIt(true)}>
+					<button
+						onClick={() => setPlayerTwoProveIt(true)}
+						style={styles ? styles.undoBtn : null}
+					>
 						Restore Player Two Prove It
 					</button>
 				</div>
-				<button onClick={() => setStartGame(false)}>
+				<button
+					onClick={() => setStartGame(false)}
+					style={styles ? styles.btn : null}
+				>
 					Jack! Go Back!
 				</button>{" "}
 			</div>

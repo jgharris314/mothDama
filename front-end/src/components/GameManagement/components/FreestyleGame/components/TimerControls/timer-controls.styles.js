@@ -14,6 +14,7 @@ export const StyledTimerControls = styled.div`
 	button {
 		margin: 0 5px;
 		height: 50px;
+		box-shadow: 0px 0px 10px inset black, 0px 0px 5px black;
 	}
 	.timer-controls-row {
 		display: flex;

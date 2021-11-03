@@ -1,11 +1,13 @@
 import React from "react";
-import Header from "../Header/Header";
+
 import { StyledShop } from "./shop.styles";
-const Shop = () => {
+const Shop = ({ setHeaderMemo, styles }) => {
+	setHeaderMemo("Give me your money");
 	return (
 		<StyledShop>
-			<Header headerMemo={"Give me all your money"} />
-			<div className="shop">coming soon</div>
+			<div className="shop" style={styles}>
+				coming soon
+			</div>
 		</StyledShop>
 	);
 };

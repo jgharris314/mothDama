@@ -13,6 +13,7 @@ export const StyledDurationAdjust = styled.div`
 
 	button {
 		margin: 5px 5px;
+		box-shadow: 0px 0px 5px inset black, 0px 0px 5px black;
 	}
 	.duration-adjust-row {
 		display: flex;

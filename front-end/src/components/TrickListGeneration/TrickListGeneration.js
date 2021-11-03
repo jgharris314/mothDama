@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { StyledTrickListGeneration } from "./trick-list-generation.styles";
 import { listAllTricks } from "../../utilities/api";
 import Header from "../Header/Header";
-const TrickListGeneration = () => {
+const TrickListGeneration = ({ setHeaderMemo, styles }) => {
 	const defaultObjectState = [
 		{
 			trick_name: "pick",
@@ -120,16 +120,20 @@ const TrickListGeneration = () => {
 		prepTricks();
 	}, [allTricks, numberOfTricks, selectedDifficulty]);
 	document.title = "mothDama - Lines";
+	setHeaderMemo("There is no easy");
 	return (
 		<StyledTrickListGeneration>
-			<Header headerMemo={"There is no easy"} />
-			<div className="line-display">
+			{/* <Header headerMemo={"There is no easy"} /> */}
+			<div className="line-display" style={styles ? styles.line : null}>
 				<p>Starting Grip: {startingGrip}</p>
 				<p>{trickLine}</p>
 			</div>
 
 			<div className="options">
-				<div className="options-settings">
+				<div
+					className="options-settings"
+					style={styles ? styles.settings : null}
+				>
 					<p>Difficulty</p>
 					<select onChange={(event) => handleDifficultyChange(event)}>
 						<option value={0}>Easy</option>
@@ -154,6 +158,7 @@ const TrickListGeneration = () => {
 				</div>
 				<button
 					className="options-settings"
+					style={styles ? styles.btn : null}
 					onClick={() => generateLine()}
 				>
 					Generate a line!

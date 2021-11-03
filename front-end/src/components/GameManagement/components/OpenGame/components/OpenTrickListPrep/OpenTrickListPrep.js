@@ -7,6 +7,7 @@ const TrickListPrep = ({
 	setTrickList,
 	setStartGame,
 	defaultTrickList,
+	styles,
 }) => {
 	const [formTricks, setFormTricks] = useState([]);
 
@@ -38,14 +39,20 @@ const TrickListPrep = ({
 	};
 
 	return (
-		<StyledOpenTrickListPrep>
+		<StyledOpenTrickListPrep style={styles ? styles.background : null}>
 			{trickList.name.length ? (
 				<div>
 					<div className="chosen-tricklist-buttons">
-						<button onClick={() => setTrickList(defaultTrickList)}>
+						<button
+							style={styles ? styles.btn : null}
+							onClick={() => setTrickList(defaultTrickList)}
+						>
 							Wait! I don't like this list
 						</button>
-						<button onClick={() => setStartGame(true)}>
+						<button
+							style={styles ? styles.btn : null}
+							onClick={() => setStartGame(true)}
+						>
 							Start
 						</button>
 					</div>
@@ -70,6 +77,7 @@ const TrickListPrep = ({
 									onClick={() => loadTrickList(trickList.id)}
 									data-tip
 									data-for={`${trickList.id}Tip`}
+									style={styles ? styles.presets : null}
 								>
 									{trickList.name}
 								</div>
@@ -96,7 +104,12 @@ const TrickListPrep = ({
 								onChange={handleChange}
 								placeholder="enter,tricks,separated,by,a,comma"
 							></textarea>
-							<button type="submit">Play Custom</button>
+							<button
+								style={styles ? styles.btn : null}
+								type="submit"
+							>
+								Play Custom
+							</button>
 						</form>
 					</div>
 				</div>

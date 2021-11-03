@@ -1,7 +1,7 @@
 import React from "react";
 import { minutesToDuration, secondsToDuration } from "../../utils/duration";
 import { StyledTimer } from "./timer.styles";
-const Timer = ({ values }) => {
+const Timer = ({ values, styles }) => {
 	const getPercent = (percentFor, percentOf) => {
 		return 100 - Math.floor((percentFor / percentOf) * 100);
 	};
@@ -33,7 +33,10 @@ const Timer = ({ values }) => {
 					</p>
 				</div>
 				<div className="">
-					<div className="progress">
+					<div
+						className="progress"
+						style={styles ? styles.timerBorder : null}
+					>
 						<div
 							className="progress__bar"
 							role="progressbar"
@@ -50,19 +53,36 @@ const Timer = ({ values }) => {
 											values.breakVal * 60
 									  )
 							}
-							style={{
-								width: `${
-									values.focusing
-										? getPercent(
-												values.count,
-												values.focusVal * 60
-										  )
-										: getPercent(
-												values.count,
-												values.breakVal * 60
-										  )
-								}%`,
-							}}
+							style={
+								styles.timerProgress
+									? {
+											width: `${
+												values.focusing
+													? getPercent(
+															values.count,
+															values.focusVal * 60
+													  )
+													: getPercent(
+															values.count,
+															values.breakVal * 60
+													  )
+											}%`,
+											backgroundColor: `${styles.timerProgress.backgroundColor}`,
+									  }
+									: {
+											width: `${
+												values.focusing
+													? getPercent(
+															values.count,
+															values.focusVal * 60
+													  )
+													: getPercent(
+															values.count,
+															values.breakVal * 60
+													  )
+											}%`,
+									  }
+							}
 						/>
 					</div>
 				</div>
