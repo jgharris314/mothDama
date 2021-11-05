@@ -1,18 +1,31 @@
 import React from "react";
 import { StyledHeader } from "./header.styles";
 
-const Header = ({ headerMemo, changeColor, styles }) => {
+const Header = ({
+	headerMemo,
+
+	styles,
+	styleArray,
+	setStyleIndex,
+}) => {
+	const styleSwitchOnClick = (event) => {
+		setStyleIndex(event.target.value);
+	};
 	return (
-		<StyledHeader>
+		<StyledHeader style={styles ? styles.background : null}>
 			<h1 style={styles ? styles.h1 : null}>mothDama</h1>
 			<h2 style={styles ? styles.h2 : null}>{headerMemo}</h2>
-			<button
-				className="colorBtn"
-				onClick={() => changeColor()}
-				style={styles.btn}
+			<select
+				name="color_option"
+				id="color_option"
+				onChange={styleSwitchOnClick}
 			>
-				Color Switch
-			</button>
+				{styleArray.map((x, index) => (
+					<option key={index} value={index}>{`Style ${
+						index + 1
+					}`}</option>
+				))}
+			</select>
 		</StyledHeader>
 	);
 };

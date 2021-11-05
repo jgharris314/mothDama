@@ -40,6 +40,7 @@ function App() {
 				styleIndex={styleIndex}
 				styleArray={styleArray}
 				styles={style.header}
+				setStyle={setStyle}
 			/>
 			<NavBar styles={style.navBar} />
 

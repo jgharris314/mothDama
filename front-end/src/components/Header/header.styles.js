@@ -6,8 +6,7 @@ export const StyledHeader = styled.div`
 	justify-content: center;
 	top: 0;
 	/* max-height: 150px; */
-	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-		url(${headerBackground});
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
 	background-size: contain;
 	margin-bottom: 0px;
 	/* overflow: hidden; */
@@ -25,14 +24,10 @@ export const StyledHeader = styled.div`
 		padding: 0px;
 	}
 
-	.colorBtn {
+	select {
+		height: 20px;
+		box-shadow: 0px 0px 5px black;
 		border: none;
-
-		box-shadow: 0px 0px 5px inset black, 0px 0px 5px black;
-		font-weight: bold;
-		font-size: 14px;
-		background-color: lime;
 		border-radius: 5px;
-		margin-bottom: 5px;
 	}
 `;

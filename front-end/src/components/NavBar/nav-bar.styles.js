@@ -23,11 +23,8 @@ export const StyledNavBar = styled.div`
 			color: lime;
 			font-weight: bold;
 			padding: 3px;
-			/* margin: 1%; */
 			box-shadow: 0px 0px 3px orange;
 			border-radius: 5px;
-			/* margin-top: 0px; */
-			/* align-items: center; */
 			:hover {
 				color: lime;
 				cursor: pointer;

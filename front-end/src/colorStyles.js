@@ -4,27 +4,36 @@ export const colorStyles = [
 	//style 1
 	{
 		header: {
+			background: { "background-color": "blue" },
 			h1: {
-				color: "blue",
+				color: "yellow",
 			},
-			h2: { color: "yellow" },
+			h2: { color: "pink" },
 			btn: { "background-color": "pink" },
 		},
 		landingPage: {
-			"background-color": "pink",
+			"background-color": "blue",
 		},
 		shop: {
 			"background-color": "pink",
 		},
 		gallery: {
-			background: { "background-color": "pink" },
-			nextBtn: { "background-color": "blue" },
+			background: { "background-color": "blue" },
+			nextBtn: { "background-color": "pink" },
 			prevBtn: { "background-color": "yellow" },
 		},
 		trickGen: {
-			settings: { "background-color": "pink", color: "yellow" },
-			line: { "background-color": "pink", color: "black" },
-			btn: { "background-color": "pink", color: "yellow" },
+			settings: {
+				"background-color": "blue",
+				color: "yellow",
+				"box-shadow": "0px 0px 5px pink",
+			},
+			line: { "background-color": "blue", color: "white" },
+			btn: {
+				"background-color": "blue",
+				color: "yellow",
+				"box-shadow": "0px 0px 5px pink",
+			},
 		},
 
 		games: {
@@ -65,29 +74,96 @@ export const colorStyles = [
 			},
 		},
 	},
+	//style 2
+	{
+		header: {
+			background: { "background-color": "black" },
+			h1: {
+				color: "cyan",
+			},
+			h2: { color: "red" },
+			btn: { "background-color": "cyan" },
+		},
+		landingPage: {
+			"background-color": "black",
+		},
+		shop: {
+			"background-color": "black",
+		},
+		gallery: {
+			background: { "background-color": "black" },
+			nextBtn: { "background-color": "cyan" },
+			prevBtn: { "background-color": "grey" },
+		},
+		trickGen: {
+			settings: {
+				"background-color": "black",
+				color: "cyan",
+				"box-shadow": "0px 0px 5px grey",
+			},
+			line: { "background-color": "black", color: "white" },
+			btn: {
+				"background-color": "black",
+				color: "cyan",
+				"box-shadow": "0px 0px 5px grey",
+			},
+		},
+
+		games: {
+			gameLandingPage: { btn: { "background-color": "cyan" } },
+			open: {
+				play: {
+					background: { "background-color": "black" },
+					nextBtn: { "background-color": "cyan" },
+					otherButtons: {
+						"background-color": "red",
+						"box-shadow": "0px 0px 5px inset black",
+					},
+				},
+				prep: {
+					background: { "background-color": "black" },
+					presets: { "background-color": "cyan" },
+					btn: { "background-color": "cyan" },
+				},
+			},
+			ken: {
+				background: { "background-color": "black" },
+				btn: { "background-color": "cyan" },
+				undoBtn: { "background-color": "red" },
+			},
+			freeStyle: {
+				background: { "background-color": "black" },
+				buttons: {
+					btn: { "background-color": "cyan" },
+					undoBtn: { "background-color": "red" },
+				},
+				timerBorder: { border: "3px solid cyan" },
+				timerProgress: { backgroundColor: "cyan" },
+			},
+		},
+		navBar: {
+			background: { "background-color": "black" },
+			item: {
+				"background-color": "cyan",
+				color: "black",
+				"box-shadow": "0px 0px 5px inset black",
+			},
+		},
+	},
 ];
 
 export const defaultStyle = {
 	header: {
-		h1: {
-			color: "lime",
-		},
-		h2: { color: "orange" },
-		btn: { "background-color": "lime" },
+		background: {},
+		h1: {},
+		h2: {},
+		btn: {},
 	},
-	landingPage: {
-		"background-color": outerBackgroundColor,
-	},
-	shop: {
-		"background-color": translucentPurp,
-	},
-	gallery: {
-		background: { "background-color": translucentPurp },
-		nextBtn: { "background-color": "lime" },
-		prevBtn: { "background-color": "orange" },
-	},
+	landingPage: {},
+	shop: {},
+	gallery: {},
 	games: {
-		gameLandingPage: { btn: { "background-color": "lime" } },
+		gameLandingPage: { btn: { "background-color": "" } },
 		open: { play: {}, prep: { background: {} } },
 		ken: { play: {}, prep: {} },
 		freeStyle: {},
