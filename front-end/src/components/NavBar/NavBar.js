@@ -3,7 +3,8 @@ import { StyledNavBar } from "./nav-bar.styles";
 import { Link } from "react-router-dom";
 
 const NavBar = ({ styles }) => {
-	const navOptions = ["Home", "Shop", "Pretties", "Lines", "Games"];
+	//removed shop from nav options until shop is made
+	const navOptions = ["Home", "Pretties", "Lines", "Games"];
 
 	return (
 		<StyledNavBar style={styles ? styles.background : null}>

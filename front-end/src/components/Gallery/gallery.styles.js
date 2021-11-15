@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { purp, translucentPurp, whiteWindow } from "../../App.variables";
+import { translucentPurp } from "../../App.variables";
 
 export const StyledGallery = styled.div`
 	margin: 0;

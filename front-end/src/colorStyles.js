@@ -1,5 +1,3 @@
-import { outerBackgroundColor, translucentPurp } from "./App.variables";
-
 export const colorStyles = [
 	//style 1
 	{

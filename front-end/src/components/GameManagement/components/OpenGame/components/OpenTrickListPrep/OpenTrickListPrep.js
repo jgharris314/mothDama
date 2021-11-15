@@ -104,12 +104,14 @@ const TrickListPrep = ({
 								onChange={handleChange}
 								placeholder="enter,tricks,separated,by,a,comma"
 							></textarea>
-							<button
-								style={styles ? styles.btn : null}
-								type="submit"
-							>
-								Play Custom
-							</button>
+							<div>
+								<button
+									style={styles ? styles.btn : null}
+									type="submit"
+								>
+									Play Custom
+								</button>
+							</div>
 						</form>
 					</div>
 				</div>

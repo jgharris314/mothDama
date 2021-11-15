@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { purp, outerBackgroundColor } from "../../App.variables";
+
 export const StyledTrickListGeneration = styled.div`
 	margin: 0;
 	max-height: 90vh;
@@ -47,11 +47,7 @@ export const StyledTrickListGeneration = styled.div`
 	.line-display {
 		color: white;
 		background-color: rgba(119, 0, 166, 0.7);
-
-		/* box-shadow: 0px 0px 200px inset ${outerBackgroundColor}; */
-
 		height: 380px;
-
 		overflow-y: scroll;
 		-ms-overflow-style: none;
 		scrollbar-width: none;

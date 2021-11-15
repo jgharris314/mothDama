@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { StyledTrickListGeneration } from "./trick-list-generation.styles";
 import { listAllTricks } from "../../utilities/api";
-import Header from "../Header/Header";
+
 const TrickListGeneration = ({ setHeaderMemo, styles }) => {
 	const defaultObjectState = [
 		{
