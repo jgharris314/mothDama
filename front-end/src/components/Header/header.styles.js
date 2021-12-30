@@ -6,7 +6,7 @@ export const StyledHeader = styled.div`
 	top: 0;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
 	background-size: contain;
-	margin-bottom: 0px;
+	margin-bottom: 10px;
 
 	h1 {
 		font-size: 68px;

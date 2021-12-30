@@ -28,15 +28,17 @@ const Gallery = ({ setHeaderMemo, styles }) => {
 	return (
 		<StyledGallery>
 			<div className="gallery" style={styles ? styles.background : null}>
-				<div
+				{/* <div
 					className="gallery-img"
 					style={{
-						backgroundSize: "contain",
+						objectFit: "contain",
 						backgroundRepeat: "no-repeat",
 						background: `url(${imgArray[count]})`,
 						backgroundPosition: "center",
 					}}
-				></div>
+				></div> */}
+				<img src={imgArray[count]} alt="filler" />
+				<br />
 
 				<button
 					className="prev"

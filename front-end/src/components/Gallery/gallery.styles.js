@@ -14,10 +14,25 @@ export const StyledGallery = styled.div`
 		padding-bottom: 2%;
 
 		&-img {
-			height: 250px;
+			min-height: 250px;
 			width: 95%;
 			margin: 0 auto;
 			box-shadow: 0px 0px 5px black;
+		}
+
+		img {
+			object-fit: contain;
+			object-position: center;
+			box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.18);
+			border-radius: 5px;
+			max-height: 300px;
+			max-width: 90%;
+		}
+
+		@media screen and (min-width: 720px) {
+			img {
+				max-height: 400px;
+			}
 		}
 
 		button {

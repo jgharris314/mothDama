@@ -2,7 +2,7 @@ export const colorStyles = [
 	//style 1
 	{
 		header: {
-			background: { "background-color": "blue" },
+			background: { "background-color": "black" },
 			h1: {
 				color: "yellow",
 			},
@@ -10,25 +10,25 @@ export const colorStyles = [
 			btn: { "background-color": "pink" },
 		},
 		landingPage: {
-			"background-color": "blue",
+			"background-color": "black",
 		},
 		shop: {
 			"background-color": "pink",
 		},
 		gallery: {
-			background: { "background-color": "blue" },
+			background: { "background-color": "black" },
 			nextBtn: { "background-color": "pink" },
 			prevBtn: { "background-color": "yellow" },
 		},
 		trickGen: {
 			settings: {
-				"background-color": "blue",
+				"background-color": "black",
 				color: "yellow",
 				"box-shadow": "0px 0px 5px pink",
 			},
-			line: { "background-color": "blue", color: "white" },
+			line: { "background-color": "black", color: "white" },
 			btn: {
-				"background-color": "blue",
+				"background-color": "black",
 				color: "yellow",
 				"box-shadow": "0px 0px 5px pink",
 			},
@@ -38,23 +38,23 @@ export const colorStyles = [
 			gameLandingPage: { btn: { "background-color": "pink" } },
 			open: {
 				play: {
-					background: { "background-color": "blue" },
+					background: { "background-color": "black" },
 					nextBtn: { "background-color": "yellow" },
 					otherButtons: { "background-color": "pink" },
 				},
 				prep: {
-					background: { "background-color": "blue" },
+					background: { "background-color": "black" },
 					presets: { "background-color": "pink" },
 					btn: { "background-color": "yellow" },
 				},
 			},
 			ken: {
-				background: { "background-color": "blue" },
+				background: { "background-color": "black" },
 				btn: { "background-color": "yellow" },
 				undoBtn: { "background-color": "pink" },
 			},
 			freeStyle: {
-				background: { "background-color": "blue" },
+				background: { "background-color": "black" },
 				buttons: {
 					btn: { "background-color": "yellow" },
 					undoBtn: { "background-color": "pink" },
@@ -64,7 +64,7 @@ export const colorStyles = [
 			},
 		},
 		navBar: {
-			background: { "background-color": "blue" },
+			background: { "background-color": "black" },
 			item: {
 				"background-color": "pink",
 				color: "black",
