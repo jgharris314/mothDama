@@ -45,7 +45,7 @@ export const StyledPlayKenGame = styled.div`
 	.players-section {
 		display: flex;
 		flex-direction: row;
-		width: 95%;
+		width: 100%;
 		justify-content: center;
 		margin: 0 auto;
 		&-player {
