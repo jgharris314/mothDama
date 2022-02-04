@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { StyledGallery } from "./gallery.styles";
 
-import img1 from "./galleryimg/greenpurptriangles.jpg";
-import img2 from "./galleryimg/short.jpg";
-import img3 from "./galleryimg/sundial.jpg";
+import img1 from "./galleryimg/cereal-kendamaisr.jpg";
+import img2 from "./galleryimg/cereal-red.jpg";
+import img3 from "./galleryimg/kendama-kollective.jpg";
+import img4 from "./galleryimg/sol-kd.jpg";
 const Gallery = ({ setHeaderMemo, styles }) => {
 	const [count, setCount] = useState(0);
-	const imgArray = [img1, img2, img3];
+	const imgArray = [img1, img2, img3, img4];
 
 	const handleNextImg = () => {
 		if (count < imgArray.length - 1) {
